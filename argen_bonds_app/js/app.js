@@ -86,13 +86,99 @@ class TradingDeskApp {
     }
   }
 
+  generateCashFlows(bond) {
+    if (!bond.maturity) return bond.cashFlows || [];
+    
+    const matParts = bond.maturity.split('-');
+    if (matParts.length !== 3) return bond.cashFlows || [];
+    const matYear = parseInt(matParts[0]);
+    const matMonth = parseInt(matParts[1]);
+    const matDay = parseInt(matParts[2]);
+    
+    const freq = bond.frequency || 2;
+    const intervalMonths = 12 / freq;
+
+    let startYear = 2024;
+    let startMonth = matMonth % 6;
+    if (startMonth === 0) startMonth = 6;
+
+    const flowDates = [];
+    let curY = startYear;
+    let curM = startMonth;
+
+    while (curY < matYear || (curY === matYear && curM <= matMonth)) {
+      const formattedDate = `${curY}-${String(curM).padStart(2, '0')}-${String(matDay).padStart(2, '0')}`;
+      if (!flowDates.includes(formattedDate)) {
+        flowDates.push(formattedDate);
+      }
+      curM += intervalMonths;
+      if (curM > 12) {
+        curM -= 12;
+        curY += 1;
+      }
+    }
+
+    if (flowDates.length === 0 || flowDates[flowDates.length - 1] !== bond.maturity) {
+      if (!flowDates.includes(bond.maturity)) {
+        flowDates.push(bond.maturity);
+      }
+    }
+
+    flowDates.sort();
+
+    const n = flowDates.length;
+    let residual = 100.0;
+    const couponRate = bond.couponRate || 8.0;
+    const periodCouponPct = couponRate / freq;
+    
+    const isAmortizable = bond.structureType === 'Amortizable';
+    const amortCount = isAmortizable ? Math.min(3, n) : 1;
+
+    const result = [];
+    for (let i = 0; i < n; i++) {
+      const dateStr = flowDates[i];
+      const isLast = (i === n - 1);
+      
+      let amort = 0;
+      if (isAmortizable) {
+        if (i >= n - amortCount) {
+          amort = Number((100.0 / amortCount).toFixed(2));
+        }
+      } else {
+        if (isLast) amort = 100.0;
+      }
+
+      if (isLast) {
+        amort = residual;
+      }
+
+      const cpnAmount = Number(((residual * periodCouponPct) / 100.0).toFixed(3));
+      const totalAmount = Number((amort + cpnAmount).toFixed(3));
+      const nextResidual = Math.max(0, Number((residual - amort).toFixed(2)));
+
+      result.push({
+        date: dateStr,
+        amortization: amort,
+        coupon: Number(periodCouponPct.toFixed(3)),
+        amount: totalAmount,
+        residual: nextResidual
+      });
+
+      residual = nextResidual;
+    }
+
+    return result;
+  }
+
   recalculateAllBonds() {
     const settlementDate = FinancialMath.getSettlementDate(this.settlementMode);
 
     this.calculatedBonds = this.bonds.map(bond => {
+      const cashFlows = this.generateCashFlows(bond);
+
       const accruedInterest = FinancialMath.calculateAccruedInterest(
         bond.couponRate,
-        bond.lastCouponDate,
+        bond.lastCouponDate || '2026-01-01',
         settlementDate,
         '30/360',
         100
@@ -104,14 +190,14 @@ class TradingDeskApp {
 
       const tir = FinancialMath.calculateTIR(
         dirtyPrice,
-        bond.cashFlows,
+        cashFlows,
         settlementDate,
         bond.frequency
       );
 
       const { macaulayDuration, modifiedDuration, convexity, dv01 } = FinancialMath.calculateRiskMetrics(
         dirtyPrice,
-        bond.cashFlows,
+        cashFlows,
         tir,
         settlementDate,
         bond.frequency
@@ -119,6 +205,7 @@ class TradingDeskApp {
 
       return {
         ...bond,
+        cashFlows,
         settlementDate,
         accruedInterest: Number(accruedInterest.toFixed(2)),
         dirtyPrice: Number(dirtyPrice.toFixed(2)),
@@ -334,7 +421,7 @@ class TradingDeskApp {
           <td>
             <span class="badge ${b.law === 'Nueva York' ? 'badge-law' : 'badge-sector'}">${b.law}</span>
           </td>
-          <td class="num-tabular">${b.maturity.split('-').reverse().join('/')}</td>
+          <td class="num-tabular">${this.formatDate(b.maturity)}</td>
           <td class="num-tabular text-lime" style="font-weight: 700;">${b.tir.toFixed(2)}%</td>
           <td class="num-tabular">${b.duration.toFixed(2)} yrs</td>
           <td class="num-tabular text-cyan" style="font-weight: 700; font-size: 1.05em;">${b.parity.toFixed(1)}%</td>
@@ -355,6 +442,15 @@ class TradingDeskApp {
     });
   }
 
+  formatDate(dateStr) {
+    if (!dateStr) return '';
+    const parts = dateStr.split('T')[0].split('-');
+    if (parts.length === 3) {
+      return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+    return dateStr;
+  }
+
   toggleFavorite(bondId) {
     if (this.favorites.includes(bondId)) {
       this.favorites = this.favorites.filter(id => id !== bondId);
@@ -364,8 +460,6 @@ class TradingDeskApp {
     this.saveFavorites();
     this.requestDashboardUpdate();
   }
-
-
 
   openModal(bond) {
     this.selectedBondForModal = bond;
@@ -384,7 +478,7 @@ class TradingDeskApp {
     if (tbody) {
       tbody.innerHTML = bond.cashFlows.map(cf => `
         <tr>
-          <td class="num-tabular">${cf.date}</td>
+          <td class="num-tabular">${this.formatDate(cf.date)}</td>
           <td class="num-tabular">${cf.amortization > 0 ? cf.amortization + '%' : '-'}</td>
           <td class="num-tabular">${cf.coupon.toFixed(3)}%</td>
           <td class="num-tabular text-lime" style="font-weight: 700;">$${cf.amount.toFixed(3)}</td>
@@ -428,7 +522,7 @@ class TradingDeskApp {
   exportCashFlowsToCSV(bond) {
     let csv = `Fecha Pago,Amortizacion (%),Cupon Renta (%),Flujo Total ($),Capital Residual (%)\n`;
     bond.cashFlows.forEach(cf => {
-      csv += `${cf.date},${cf.amortization},${cf.coupon},${cf.amount},${cf.residual}\n`;
+      csv += `${this.formatDate(cf.date)},${cf.amortization},${cf.coupon},${cf.amount},${cf.residual}\n`;
     });
 
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
