@@ -40,7 +40,9 @@ class TradingDeskApp {
   loadFavorites() {
     try {
       const saved = localStorage.getItem('argen_bonds_watchlist');
-      return saved ? JSON.parse(saved) : ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
+      const parsed = saved ? JSON.parse(saved) : null;
+      if (Array.isArray(parsed)) return parsed;
+      return ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
     } catch (e) {
       return ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
     }
@@ -478,7 +480,7 @@ class TradingDeskApp {
 
       let matchGroup = true;
       if (this.selectedGroup === 'Favoritos') {
-        matchGroup = this.favorites.has(b.ticker);
+        matchGroup = Array.isArray(this.favorites) && this.favorites.includes(b.id);
       } else if (this.selectedGroup !== 'Todos') {
         matchGroup = b.instrumentGroup === this.selectedGroup;
       }
