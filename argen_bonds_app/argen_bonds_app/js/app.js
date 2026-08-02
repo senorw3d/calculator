@@ -334,7 +334,7 @@ class TradingDeskApp {
           <td>
             <span class="badge ${b.law === 'Nueva York' ? 'badge-law' : 'badge-sector'}">${b.law}</span>
           </td>
-          <td class="num-tabular">${b.maturity.split('-').reverse().join('/')}</td>
+          <td class="num-tabular">${this.formatDate(b.maturity)}</td>
           <td class="num-tabular text-lime" style="font-weight: 700;">${b.tir.toFixed(2)}%</td>
           <td class="num-tabular">${b.duration.toFixed(2)} yrs</td>
           <td class="num-tabular text-cyan" style="font-weight: 700; font-size: 1.05em;">${b.parity.toFixed(1)}%</td>
@@ -355,6 +355,15 @@ class TradingDeskApp {
     });
   }
 
+  formatDate(dateStr) {
+    if (!dateStr) return '';
+    const parts = dateStr.split('T')[0].split('-');
+    if (parts.length === 3) {
+      return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+    return dateStr;
+  }
+
   toggleFavorite(bondId) {
     if (this.favorites.includes(bondId)) {
       this.favorites = this.favorites.filter(id => id !== bondId);
@@ -364,8 +373,6 @@ class TradingDeskApp {
     this.saveFavorites();
     this.requestDashboardUpdate();
   }
-
-
 
   openModal(bond) {
     this.selectedBondForModal = bond;
@@ -384,7 +391,7 @@ class TradingDeskApp {
     if (tbody) {
       tbody.innerHTML = bond.cashFlows.map(cf => `
         <tr>
-          <td class="num-tabular">${cf.date}</td>
+          <td class="num-tabular">${this.formatDate(cf.date)}</td>
           <td class="num-tabular">${cf.amortization > 0 ? cf.amortization + '%' : '-'}</td>
           <td class="num-tabular">${cf.coupon.toFixed(3)}%</td>
           <td class="num-tabular text-lime" style="font-weight: 700;">$${cf.amount.toFixed(3)}</td>
@@ -428,7 +435,7 @@ class TradingDeskApp {
   exportCashFlowsToCSV(bond) {
     let csv = `Fecha Pago,Amortizacion (%),Cupon Renta (%),Flujo Total ($),Capital Residual (%)\n`;
     bond.cashFlows.forEach(cf => {
-      csv += `${cf.date},${cf.amortization},${cf.coupon},${cf.amount},${cf.residual}\n`;
+      csv += `${this.formatDate(cf.date)},${cf.amortization},${cf.coupon},${cf.amount},${cf.residual}\n`;
     });
 
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
