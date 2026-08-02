@@ -1,10142 +1,40568 @@
 ﻿export const BONDS_DATASET = [
+
+
+
   {
+
+
+
     id: "bond_TLCMZ",
+
+
+
     ticker: "TLCMZ",
+
+
+
     isin: "AR000TLCMZ0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Pesos Fijos",
+
+
+
+    instrumentGroup: "Pesos BADLAR",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-18", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-07-18", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCND",
+
+
+
     ticker: "IRCND",
+
+
+
     isin: "AR000IRCND0000",
+
+
+
     issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
     shortIssuer: "IRSA",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-25", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-03-25", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN42D",
+
+
+
     ticker: "PN42D",
+
+
+
     isin: "AR000PN42D0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCXD",
+
+
+
     ticker: "YMCXD",
+
+
+
     isin: "AR000YMCXD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-10-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MCC2D",
+
+
+
     ticker: "MCC2D",
+
+
+
     isin: "AR000MCC2D0000",
+
+
+
     issuer: "Mastellone Hnos. S.A.",
+
+
+
     shortIssuer: "Mastellone",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCCC",
+
+
+
     ticker: "NPCCC",
+
+
+
     isin: "AR000NPCCC0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCOC",
+
+
+
     ticker: "IRCOC",
+
+
+
     isin: "AR000IRCOC0000",
+
+
+
     issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
     shortIssuer: "IRSA",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_GYC5D",
+
+
+
     ticker: "GYC5D",
+
+
+
     isin: "AR000GYC5D0000",
+
+
+
     issuer: "360 Energy Solar S.A.",
+
+
+
     shortIssuer: "360 Energy",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-02-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-28", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-12-28", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2028-02-28", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCCO",
+
+
+
     ticker: "NPCCO",
+
+
+
     isin: "AR000NPCCO0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCOO",
+
+
+
     ticker: "IRCOO",
+
+
+
     isin: "AR000IRCOO0000",
+
+
+
     issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
     shortIssuer: "IRSA",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_GN49O",
+
+
+
     ticker: "GN49O",
+
+
+
     isin: "AR000GN49O0000",
+
+
+
     issuer: "Genneia S.A.",
+
+
+
     shortIssuer: "Genneia",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-02",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-02", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-02", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-02", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-02", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-09-02", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCED",
+
+
+
     ticker: "TTCED",
+
+
+
     isin: "AR000TTCED0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-21",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-21", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-12-21", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2029-05-21", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PECMO",
+
+
+
     ticker: "PECMO",
+
+
+
     isin: "AR000PECMO0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-31",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-31", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-06-31", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2027-10-31", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR47D",
+
+
+
     ticker: "MR47D",
+
+
+
     isin: "AR000MR47D0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-10-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2027-12-10", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
         { date: "2028-06-10", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
         { date: "2028-10-10", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC5O",
+
+
+
     ticker: "DNC5O",
+
+
+
     isin: "AR000DNC5O0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 4.875, amount: 54.875, residual: 50.0 },
+
+
+
         { date: "2027-02-20", amortization: 50.0, coupon: 4.875, amount: 52.438, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN36O",
+
+
+
     ticker: "PN36O",
+
+
+
     isin: "AR000PN36O0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-01-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-01-20", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RZBCD",
+
+
+
     ticker: "RZBCD",
+
+
+
     isin: "AR000RZBCD0000",
+
+
+
     issuer: "Rizobacter Argentina S.A.",
+
+
+
     shortIssuer: "Rizobacter",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-14",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-14", amortization: 50.0, coupon: 4.125, amount: 54.125, residual: 50.0 },
+
+
+
         { date: "2027-06-14", amortization: 50.0, coupon: 4.125, amount: 52.062, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SNSBD",
+
+
+
     ticker: "SNSBD",
+
+
+
     isin: "AR000SNSBD0000",
+
+
+
     issuer: "S.A. San Miguel A.G.I.C.I. y F.",
+
+
+
     shortIssuer: "San Miguel",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-14",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-14", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-06-14", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2027-10-14", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PNXCO",
+
+
+
     ticker: "PNXCO",
+
+
+
     isin: "AR000PNXCO0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-31",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-31", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-31", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-08-31", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCDO",
+
+
+
     ticker: "NPCDO",
+
+
+
     isin: "AR000NPCDO0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_EAC4D",
+
+
+
     ticker: "EAC4D",
+
+
+
     isin: "AR000EAC4D0000",
+
+
+
     issuer: "MSU Energy S.A.",
+
+
+
     shortIssuer: "MSU Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC2O",
+
+
+
     ticker: "PLC2O",
+
+
+
     isin: "AR000PLC2O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-03-01", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCLO",
+
+
+
     ticker: "YFCLO",
+
+
+
     isin: "AR000YFCLO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-09-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCWD",
+
+
+
     ticker: "TLCWD",
+
+
+
     isin: "AR000TLCWD0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2032-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 89.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2028-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2029-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2029-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2030-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2030-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2031-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2031-12-15", amortization: 33.33, coupon: 5.125, amount: 38.455, residual: 66.67 },
+
+
+
         { date: "2032-06-15", amortization: 33.33, coupon: 5.125, amount: 36.747, residual: 33.34 },
+
+
+
         { date: "2032-12-15", amortization: 33.34, coupon: 5.125, amount: 35.049, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC2D",
+
+
+
     ticker: "PLC2D",
+
+
+
     isin: "AR000PLC2D0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-03-01", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RCCRO",
+
+
+
     ticker: "RCCRO",
+
+
+
     isin: "AR000RCCRO0000",
+
+
+
     issuer: "Banco de la Prov. de Cordoba S.A.",
+
+
+
     shortIssuer: "Bco. Prov. Cordoba",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-02-28", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LOC6O",
+
+
+
     ticker: "LOC6O",
+
+
+
     isin: "AR000LOC6O0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-01-23",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-23", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-12-23", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2029-01-23", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RUCDD",
+
+
+
     ticker: "RUCDD",
+
+
+
     isin: "AR000RUCDD0000",
+
+
+
     issuer: "Banco de Entre Rios S.A.",
+
+
+
     shortIssuer: "Bco. Entre Rios",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_T672D",
+
+
+
     ticker: "T672D",
+
+
+
     isin: "AR000T672D0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.500, amount: 53.500, residual: 50.0 },
+
+
+
         { date: "2027-03-15", amortization: 50.0, coupon: 3.500, amount: 51.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN43O",
+
+
+
     ticker: "PN43O",
+
+
+
     isin: "AR000PN43O0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-02-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-28", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-28", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-02-28", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCJD",
+
+
+
     ticker: "YFCJD",
+
+
+
     isin: "AR000YFCJD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS49O",
+
+
+
     ticker: "CS49O",
+
+
+
     isin: "AR000CS49O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-02-21",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-21", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-21", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-12-21", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-02-21", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCRC",
+
+
+
     ticker: "VSCRC",
+
+
+
     isin: "AR000VSCRC0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-04",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-04", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-04", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-07-04", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCLD",
+
+
+
     ticker: "YFCLD",
+
+
+
     isin: "AR000YFCLD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-09-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTC8D",
+
+
+
     ticker: "TTC8D",
+
+
+
     isin: "AR000TTC8D0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 100.0, coupon: 3.375, amount: 103.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR43O",
+
+
+
     ticker: "MR43O",
+
+
+
     isin: "AR000MR43O0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LCMZ",
+
+
+
     ticker: "LCMZ",
+
+
+
     isin: "AR000LCMZ0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Pesos Fijos",
+
+
+
+    instrumentGroup: "Pesos BADLAR",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-18", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-07-18", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCOO",
+
+
+
     ticker: "TLCOO",
+
+
+
     isin: "AR000TLCOO0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-06",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-06", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-06", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-08-06", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MSSGD",
+
+
+
     ticker: "MSSGD",
+
+
+
     isin: "AR000MSSGD0000",
+
+
+
     issuer: "MSU Energy S.A.",
+
+
+
     shortIssuer: "MSU Energy",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2028-06-15", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_ARC1D",
+
+
+
     ticker: "ARC1D",
+
+
+
     isin: "AR000ARC1D0000",
+
+
+
     issuer: "Arcor S.A.I.C.",
+
+
+
     shortIssuer: "Arcor",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-06",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 101.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-06", amortization: 33.33, coupon: 3.000, amount: 36.330, residual: 66.67 },
+
+
+
         { date: "2027-06-06", amortization: 33.33, coupon: 3.000, amount: 35.330, residual: 33.34 },
+
+
+
         { date: "2027-07-06", amortization: 33.34, coupon: 3.000, amount: 34.340, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CICAO",
+
+
+
     ticker: "CICAO",
+
+
+
     isin: "AR000CICAO0000",
+
+
+
     issuer: "Cia. de Inversiones de Energia S.A.",
+
+
+
     shortIssuer: "CIESA",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-02-15", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCPD",
+
+
+
     ticker: "IRCPD",
+
+
+
     isin: "AR000IRCPD0000",
+
+
+
     issuer: "IRSA Propiedades Comerciales S.A.",
+
+
+
     shortIssuer: "IRSA Prop. Com.",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-09-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM42O",
+
+
+
     ticker: "YM42O",
+
+
+
     isin: "AR000YM42O0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2027-09-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM42D",
+
+
+
     ticker: "YM42D",
+
+
+
     isin: "AR000YM42D0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2027-09-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OLC7D",
+
+
+
     ticker: "OLC7D",
+
+
+
     isin: "AR000OLC7D0000",
+
+
+
     issuer: "Oleoductos del Valle S.A.",
+
+
+
     shortIssuer: "Oldelval",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-04-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCQD",
+
+
+
     ticker: "MGCQD",
+
+
+
     isin: "AR000MGCQD0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-11-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-01", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-01", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2028-06-01", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-11-01", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SBC1D",
+
+
+
     ticker: "SBC1D",
+
+
+
     isin: "AR000SBC1D0000",
+
+
+
     issuer: "Banco Supervielle S.A.",
+
+
+
     shortIssuer: "Bco. Supervielle",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-10", amortization: 100.0, coupon: 3.625, amount: 103.625, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCND",
+
+
+
     ticker: "MGCND",
+
+
+
     isin: "AR000MGCND0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2027-09-20", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCAD",
+
+
+
     ticker: "TTCAD",
+
+
+
     isin: "AR000TTCAD0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-22",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-22", amortization: 33.33, coupon: 3.875, amount: 37.205, residual: 66.67 },
+
+
+
         { date: "2027-06-22", amortization: 33.33, coupon: 3.875, amount: 35.913, residual: 33.34 },
+
+
+
         { date: "2027-08-22", amortization: 33.34, coupon: 3.875, amount: 34.632, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RUCED",
+
+
+
     ticker: "RUCED",
+
+
+
     isin: "AR000RUCED0000",
+
+
+
     issuer: "Banco de Entre Rios S.A.",
+
+
+
     shortIssuer: "Bco. Entre Rios",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCBO",
+
+
+
     ticker: "TTCBO",
+
+
+
     isin: "AR000TTCBO0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.000, amount: 4.000, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-12-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2028-04-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BACHC",
+
+
+
     ticker: "BACHC",
+
+
+
     isin: "AR000BACHC0000",
+
+
+
     issuer: "Banco Hipotecario S.A.",
+
+
+
     shortIssuer: "Bco. Hipotecario",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-07",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-07", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM34O",
+
+
+
     ticker: "YM34O",
+
+
+
     isin: "AR000YM34O0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
-    law: "Argentina",
+
+
+
+    law: "Nueva York",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
-    maturity: "2026-12-31",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
+
+
+
+    maturity: "2034-01-17",
+
+
+
+    lastCouponDate: "2026-07-17",
+
+
+
+    couponRate: 8.25,
+
+
+
     frequency: 2,
-    cleanPrice: 98.5,
+
+
+
+    cleanPrice: 110.23,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-31", amortization: 100.0, coupon: 4.375, amount: 104.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC3O",
+
+
+
     ticker: "PLC3O",
+
+
+
     isin: "AR000PLC3O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-05-20", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LMS7D",
+
+
+
     ticker: "LMS7D",
+
+
+
     isin: "AR000LMS7D0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_HVS1D",
+
+
+
     ticker: "HVS1D",
+
+
+
     isin: "AR000HVS1D0000",
+
+
+
     issuer: "Havanna S.A.",
+
+
+
     shortIssuer: "Havanna",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCZC",
+
+
+
     ticker: "YMCZC",
+
+
+
     isin: "AR000YMCZC0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2029-06-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-09-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SIC2D",
+
+
+
     ticker: "SIC2D",
+
+
+
     isin: "AR000SIC2D0000",
+
+
+
     issuer: "Ternium Argentina S.A.",
+
+
+
     shortIssuer: "Ternium",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-04-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OT42O",
+
+
+
     ticker: "OT42O",
+
+
+
     isin: "AR000OT42O0000",
+
+
+
     issuer: "Oiltanking Ebytem S.A.",
+
+
+
     shortIssuer: "Oiltanking",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-25", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-25", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCKO",
+
+
+
     ticker: "YFCKO",
+
+
+
     isin: "AR000YFCKO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCMO",
+
+
+
     ticker: "MGCMO",
+
+
+
     isin: "AR000MGCMO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
+
+
+
         { date: "2027-03-10", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN43D",
+
+
+
     ticker: "PN43D",
+
+
+
     isin: "AR000PN43D0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-02-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-28", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-28", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-28", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-02-28", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCPC",
+
+
+
     ticker: "TLCPC",
+
+
+
     isin: "AR000TLCPC0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-11-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS49D",
+
+
+
     ticker: "CS49D",
+
+
+
     isin: "AR000CS49D0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-02-21",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-21", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-21", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-12-21", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-02-21", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCMD",
+
+
+
     ticker: "YFCMD",
+
+
+
     isin: "AR000YFCMD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-03-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-03-15", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OLC5O",
+
+
+
     ticker: "OLC5O",
+
+
+
     isin: "AR000OLC5O0000",
+
+
+
     issuer: "Oleoductos del Valle S.A.",
+
+
+
     shortIssuer: "Oldelval",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 100.0, coupon: 3.875, amount: 103.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC4O",
+
+
+
     ticker: "PLC4O",
+
+
+
     isin: "AR000PLC4O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-12-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS51D",
+
+
+
     ticker: "CS51D",
+
+
+
     isin: "AR000CS51D0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-12",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-05-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC3D",
+
+
+
     ticker: "PLC3D",
+
+
+
     isin: "AR000PLC3D0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-05-20", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR44D",
+
+
+
     ticker: "MR44D",
+
+
+
     isin: "AR000MR44D0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 50.0, coupon: 4.375, amount: 54.375, residual: 50.0 },
+
+
+
         { date: "2027-05-10", amortization: 50.0, coupon: 4.375, amount: 52.188, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MTC2D",
+
+
+
     ticker: "MTC2D",
+
+
+
     isin: "AR000MTC2D0000",
+
+
+
     issuer: "Mastellone Hnos. S.A.",
+
+
+
     shortIssuer: "Mastellone",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCPD",
+
+
+
     ticker: "TLCPD",
+
+
+
     isin: "AR000TLCPD0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-11-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC3C",
+
+
+
     ticker: "DNC3C",
+
+
+
     isin: "AR000DNC3C0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-24",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-24", amortization: 100.0, coupon: 4.875, amount: 104.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCED",
+
+
+
     ticker: "MGCED",
+
+
+
     isin: "AR000MGCED0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 4.625, amount: 104.625, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SIC1D",
+
+
+
     ticker: "SIC1D",
+
+
+
     isin: "AR000SIC1D0000",
+
+
+
     issuer: "Ternium Argentina S.A.",
+
+
+
     shortIssuer: "Ternium",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-04-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_GPS1M",
+
+
+
     ticker: "GPS1M",
+
+
+
     isin: "AR000GPS1M0000",
+
+
+
     issuer: "Grupo Supervielle S.A.",
+
+
+
     shortIssuer: "Grupo Supervielle",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "Pesos Fijos",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCXD",
+
+
+
     ticker: "VSCXD",
+
+
+
     isin: "AR000VSCXD0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-06-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCCD",
+
+
+
     ticker: "NPCCD",
+
+
+
     isin: "AR000NPCCD0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MSSFD",
+
+
+
     ticker: "MSSFD",
+
+
+
     isin: "AR000MSSFD0000",
+
+
+
     issuer: "MSU Energy S.A.",
+
+
+
     shortIssuer: "MSU Energy",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2028-06-15", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LQC1C",
+
+
+
     ticker: "LQC1C",
+
+
+
     isin: "AR000LQC1C0000",
+
+
+
     issuer: "Sociedad Comercial del Plata S.A.",
+
+
+
     shortIssuer: "SCP",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-04-10", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR46O",
+
+
+
     ticker: "MR46O",
+
+
+
     isin: "AR000MR46O0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-01-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-25", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-25", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-12-25", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2028-01-25", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LMS7C",
+
+
+
     ticker: "LMS7C",
+
+
+
     isin: "AR000LMS7C0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CP38D",
+
+
+
     ticker: "CP38D",
+
+
+
     isin: "AR000CP38D0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-14",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-14", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-06-14", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_HJCIO",
+
+
+
     ticker: "HJCIO",
+
+
+
     isin: "AR000HJCIO0000",
+
+
+
     issuer: "Holcim Argentina S.A.",
+
+
+
     shortIssuer: "Holcim",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-08-20", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN36C",
+
+
+
     ticker: "PN36C",
+
+
+
     isin: "AR000PN36C0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-01-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-01-20", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_GN49D",
+
+
+
     ticker: "GN49D",
+
+
+
     isin: "AR000GN49D0000",
+
+
+
     issuer: "Genneia S.A.",
+
+
+
     shortIssuer: "Genneia",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-02",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-02", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-02", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-02", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-02", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-09-02", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PQCSD",
+
+
+
     ticker: "PQCSD",
+
+
+
     isin: "AR000PQCSD0000",
+
+
+
     issuer: "Petroquimica Comodoro Rivadavia S.A.",
+
+
+
     shortIssuer: "PCR",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-07-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-20", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-07-20", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_AERBD",
+
+
+
     ticker: "AERBD",
+
+
+
     isin: "AR000AERBD0000",
+
+
+
     issuer: "Aeropuertos Argentina 2000 S.A.",
+
+
+
     shortIssuer: "AA2000",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2031-02-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-12-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-06-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-12-01", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2030-06-01", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2030-12-01", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2031-02-01", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CAC5D",
+
+
+
     ticker: "CAC5D",
+
+
+
     isin: "AR000CAC5D0000",
+
+
+
     issuer: "Capex S.A.",
+
+
+
     shortIssuer: "Capex",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-10-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.7,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-10-25", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SNEBD",
+
+
+
     ticker: "SNEBD",
+
+
+
     isin: "AR000SNEBD0000",
+
+
+
     issuer: "S.A. San Miguel A.G.I.C.I. y F.",
+
+
+
     shortIssuer: "San Miguel",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-10", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM40D",
+
+
+
     ticker: "YM40D",
+
+
+
     isin: "AR000YM40D0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2027-07-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MTC2O",
+
+
+
     ticker: "MTC2O",
+
+
+
     isin: "AR000MTC2O0000",
+
+
+
     issuer: "Mastellone Hnos. S.A.",
+
+
+
     shortIssuer: "Mastellone",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCJD",
+
+
+
     ticker: "YMCJD",
+
+
+
     isin: "AR000YMCJD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-04-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCXC",
+
+
+
     ticker: "YMCXC",
+
+
+
     isin: "AR000YMCXC0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-10-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_EMC1D",
+
+
+
     ticker: "EMC1D",
+
+
+
     isin: "AR000EMC1D0000",
+
+
+
     issuer: "Empresa Distribuidora Sur S.A.",
+
+
+
     shortIssuer: "Edesur",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-10-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-10-15", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCOO",
+
+
+
     ticker: "MGCOO",
+
+
+
     isin: "AR000MGCOO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-04-15", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCUD",
+
+
+
     ticker: "VSCUD",
+
+
+
     isin: "AR000VSCUD0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-03-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-18", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-18", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-03-18", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCJC",
+
+
+
     ticker: "YMCJC",
+
+
+
     isin: "AR000YMCJC0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-04-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_ZZC1D",
+
+
+
     ticker: "ZZC1D",
+
+
+
     isin: "AR000ZZC1D0000",
+
+
+
     issuer: "Pampa Energia S.A.",
+
+
+
     shortIssuer: "Pampa Energia",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-01-24",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-24", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-24", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-12-24", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-01-24", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LOC6D",
+
+
+
     ticker: "LOC6D",
+
+
+
     isin: "AR000LOC6D0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-01-23",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-23", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-12-23", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2029-01-23", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCOD",
+
+
+
     ticker: "YFCOD",
+
+
+
     isin: "AR000YFCOD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-11-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2029-06-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-11-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC3D",
+
+
+
     ticker: "DNC3D",
+
+
+
     isin: "AR000DNC3D0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-24",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-24", amortization: 100.0, coupon: 4.875, amount: 104.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCVD",
+
+
+
     ticker: "TLCVD",
+
+
+
     isin: "AR000TLCVD0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2031-03-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 91.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2028-12-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2029-06-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2029-12-15", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2030-06-15", amortization: 33.33, coupon: 5.000, amount: 38.330, residual: 66.67 },
+
+
+
         { date: "2030-12-15", amortization: 33.33, coupon: 5.000, amount: 36.664, residual: 33.34 },
+
+
+
         { date: "2031-03-15", amortization: 33.34, coupon: 5.000, amount: 35.007, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS47D",
+
+
+
     ticker: "CS47D",
+
+
+
     isin: "AR000CS47D0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-26",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-26", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-02-26", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCOD",
+
+
+
     ticker: "MGCOD",
+
+
+
     isin: "AR000MGCOD0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-04-15", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCXO",
+
+
+
     ticker: "VSCXO",
+
+
+
     isin: "AR000VSCXO0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-06-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CLI1D",
+
+
+
     ticker: "CLI1D",
+
+
+
     isin: "AR000CLI1D0000",
+
+
+
     issuer: "Clisa - Cia. Latinoamericana de Infraestructura",
+
+
+
     shortIssuer: "Clisa",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PNXCC",
+
+
+
     ticker: "PNXCC",
+
+
+
     isin: "AR000PNXCC0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-31",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-31", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-31", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-08-31", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_T662O",
+
+
+
     ticker: "T662O",
+
+
+
     isin: "AR000T662O0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-20", amortization: 100.0, coupon: 3.250, amount: 103.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC7D",
+
+
+
     ticker: "PLC7D",
+
+
+
     isin: "AR000PLC7D0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-01-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2029-06-10", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2029-12-10", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2030-01-10", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RUCEO",
+
+
+
     ticker: "RUCEO",
+
+
+
     isin: "AR000RUCEO0000",
+
+
+
     issuer: "Banco de Entre Rios S.A.",
+
+
+
     shortIssuer: "Bco. Entre Rios",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCTC",
+
+
+
     ticker: "TLCTC",
+
+
+
     isin: "AR000TLCTC0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-07-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-06-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-12-18", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2028-06-18", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2028-07-18", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCED",
+
+
+
     ticker: "NPCED",
+
+
+
     isin: "AR000NPCED0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCOC",
+
+
+
     ticker: "YFCOC",
+
+
+
     isin: "AR000YFCOC0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-11-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2029-06-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-11-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VBC1D",
+
+
+
     ticker: "VBC1D",
+
+
+
     isin: "AR000VBC1D0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-05", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-12-05", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS50O",
+
+
+
     ticker: "CS50O",
+
+
+
     isin: "AR000CS50O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-11-03",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-03", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-06-03", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-11-03", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC5O",
+
+
+
     ticker: "PLC5O",
+
+
+
     isin: "AR000PLC5O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-08-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-08-15", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LMS8C",
+
+
+
     ticker: "LMS8C",
+
+
+
     isin: "AR000LMS8C0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2028-06-20", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-09-20", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR43D",
+
+
+
     ticker: "MR43D",
+
+
+
     isin: "AR000MR43D0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_ARC1C",
+
+
+
     ticker: "ARC1C",
+
+
+
     isin: "AR000ARC1C0000",
+
+
+
     issuer: "Arcor S.A.I.C.",
+
+
+
     shortIssuer: "Arcor",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-06",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 101.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-06", amortization: 33.33, coupon: 3.000, amount: 36.330, residual: 66.67 },
+
+
+
         { date: "2027-06-06", amortization: 33.33, coupon: 3.000, amount: 35.330, residual: 33.34 },
+
+
+
         { date: "2027-07-06", amortization: 33.34, coupon: 3.000, amount: 34.340, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC3O",
+
+
+
     ticker: "DNC3O",
+
+
+
     isin: "AR000DNC3O0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-24",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-24", amortization: 100.0, coupon: 4.875, amount: 104.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCID",
+
+
+
     ticker: "YMCID",
+
+
+
     isin: "AR000YMCID0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BF39D",
+
+
+
     ticker: "BF39D",
+
+
+
     isin: "AR000BF39D0000",
+
+
+
     issuer: "BBVA Argentina S.A.",
+
+
+
     shortIssuer: "BBVA Argentina",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.7,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-01", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-12-01", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCOC",
+
+
+
     ticker: "MGCOC",
+
+
+
     isin: "AR000MGCOC0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-04-15", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM42C",
+
+
+
     ticker: "YM42C",
+
+
+
     isin: "AR000YM42C0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2027-09-30", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RC2CD",
+
+
+
     ticker: "RC2CD",
+
+
+
     isin: "AR000RC2CD0000",
+
+
+
     issuer: "Raghsa S.A.",
+
+
+
     shortIssuer: "Raghsa",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2031-05-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2029-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2029-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2030-06-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2030-12-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2031-05-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PECND",
+
+
+
     ticker: "PECND",
+
+
+
     isin: "AR000PECND0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-12-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC7C",
+
+
+
     ticker: "DNC7C",
+
+
+
     isin: "AR000DNC7C0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-05-12",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 90.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2029-06-12", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2029-12-12", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2030-05-12", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCEO",
+
+
+
     ticker: "MGCEO",
+
+
+
     isin: "AR000MGCEO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 4.625, amount: 104.625, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PQCRO",
+
+
+
     ticker: "PQCRO",
+
+
+
     isin: "AR000PQCRO0000",
+
+
+
     issuer: "Petroquimica Comodoro Rivadavia S.A.",
+
+
+
     shortIssuer: "PCR",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM37O",
+
+
+
     ticker: "YM37O",
+
+
+
     isin: "AR000YM37O0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-12",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-12", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-02-12", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SBC3O",
+
+
+
     ticker: "SBC3O",
+
+
+
     isin: "AR000SBC3O0000",
+
+
+
     issuer: "Banco Supervielle S.A.",
+
+
+
     shortIssuer: "Bco. Supervielle",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-06-05", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2027-10-05", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_GYC4O",
+
+
+
     ticker: "GYC4O",
+
+
+
     isin: "AR000GYC4O0000",
+
+
+
     issuer: "360 Energy Solar S.A.",
+
+
+
     shortIssuer: "360 Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_XMC1C",
+
+
+
     ticker: "XMC1C",
+
+
+
     isin: "AR000XMC1C0000",
+
+
+
     issuer: "Xmarts S.A.",
+
+
+
     shortIssuer: "Xmarts",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-20", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RC1CD",
+
+
+
     ticker: "RC1CD",
+
+
+
     isin: "AR000RC1CD0000",
+
+
+
     issuer: "Raghsa S.A.",
+
+
+
     shortIssuer: "Raghsa",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-03-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-03-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCUO",
+
+
+
     ticker: "TLCUO",
+
+
+
     isin: "AR000TLCUO0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-04-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2028-06-10", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2028-12-10", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2029-04-10", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OLC7O",
+
+
+
     ticker: "OLC7O",
+
+
+
     isin: "AR000OLC7O0000",
+
+
+
     issuer: "Oleoductos del Valle S.A.",
+
+
+
     shortIssuer: "Oldelval",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-04-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC6O",
+
+
+
     ticker: "PLC6O",
+
+
+
     isin: "AR000PLC6O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-03-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-20", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-20", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-03-20", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCTO",
+
+
+
     ticker: "TLCTO",
+
+
+
     isin: "AR000TLCTO0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-07-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-06-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
         { date: "2027-12-18", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2028-06-18", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2028-07-18", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCUO",
+
+
+
     ticker: "VSCUO",
+
+
+
     isin: "AR000VSCUO0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-03-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-18", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-18", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-03-18", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LOC5O",
+
+
+
     ticker: "LOC5O",
+
+
+
     isin: "AR000LOC5O0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-10-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-10-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCXO",
+
+
+
     ticker: "YMCXO",
+
+
+
     isin: "AR000YMCXO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-10-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BYCVD",
+
+
+
     ticker: "BYCVD",
+
+
+
     isin: "AR000BYCVD0000",
+
+
+
     issuer: "Albanesi Energia S.A.",
+
+
+
     shortIssuer: "Albanesi",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
+
+
+
         { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCPO",
+
+
+
     ticker: "IRCPO",
+
+
+
     isin: "AR000IRCPO0000",
+
+
+
     issuer: "IRSA Propiedades Comerciales S.A.",
+
+
+
     shortIssuer: "IRSA Prop. Com.",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-09-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCFO",
+
+
+
     ticker: "IRCFO",
+
+
+
     isin: "AR000IRCFO0000",
+
+
+
     issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
     shortIssuer: "IRSA",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-22",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-22", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CLSIO",
+
+
+
     ticker: "CLSIO",
+
+
+
     isin: "AR000CLSIO0000",
+
+
+
     issuer: "Clisa - Cia. Latinoamericana de Infraestructura",
+
+
+
     shortIssuer: "Clisa",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM41D",
+
+
+
     ticker: "YM41D",
+
+
+
     isin: "AR000YM41D0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2028-11-15", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RUCDC",
+
+
+
     ticker: "RUCDC",
+
+
+
     isin: "AR000RUCDC0000",
+
+
+
     issuer: "Banco de Entre Rios S.A.",
+
+
+
     shortIssuer: "Bco. Entre Rios",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR46D",
+
+
+
     ticker: "MR46D",
+
+
+
     isin: "AR000MR46D0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-01-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-25", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-25", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-12-25", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2028-01-25", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCYD",
+
+
+
     ticker: "YMCYD",
+
+
+
     isin: "AR000YMCYD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN35O",
+
+
+
     ticker: "PN35O",
+
+
+
     isin: "AR000PN35O0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNCBO",
+
+
+
     ticker: "DNCBO",
+
+
+
     isin: "AR000DNCBO0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 91.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2029-06-30", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2029-09-30", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS51O",
+
+
+
     ticker: "CS51O",
+
+
+
     isin: "AR000CS51O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-12",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-12-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2029-05-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCYO",
+
+
+
     ticker: "YMCYO",
+
+
+
     isin: "AR000YMCYO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MR44O",
+
+
+
     ticker: "MR44O",
+
+
+
     isin: "AR000MR44O0000",
+
+
+
     issuer: "Mirgor S.A.C.I.F.I.A.",
+
+
+
     shortIssuer: "Mirgor",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 50.0, coupon: 4.375, amount: 54.375, residual: 50.0 },
+
+
+
         { date: "2027-05-10", amortization: 50.0, coupon: 4.375, amount: 52.188, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RCCRD",
+
+
+
     ticker: "RCCRD",
+
+
+
     isin: "AR000RCCRD0000",
+
+
+
     issuer: "Banco de la Prov. de Cordoba S.A.",
+
+
+
     shortIssuer: "Bco. Prov. Cordoba",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-02-28", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM34D",
+
+
+
     ticker: "YM34D",
+
+
+
     isin: "AR000YM34D0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
-    law: "Argentina",
+
+
+
+    law: "Nueva York",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
-    maturity: "2026-12-31",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
+
+
+
+    maturity: "2034-01-17",
+
+
+
+    lastCouponDate: "2026-07-17",
+
+
+
+    couponRate: 8.25,
+
+
+
     frequency: 2,
-    cleanPrice: 98.5,
+
+
+
+    cleanPrice: 110.23,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-31", amortization: 100.0, coupon: 4.375, amount: 104.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LDCGO",
+
+
+
     ticker: "LDCGO",
+
+
+
     isin: "AR000LDCGO0000",
+
+
+
     issuer: "Ledesma S.A.A.I.",
+
+
+
     shortIssuer: "Ledesma",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-07-30", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YMCJO",
+
+
+
     ticker: "YMCJO",
+
+
+
     isin: "AR000YMCJO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-04-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BACGD",
+
+
+
     ticker: "BACGD",
+
+
+
     isin: "AR000BACGD0000",
+
+
+
     issuer: "Banco de Galicia y Buenos Aires S.A.U.",
+
+
+
     shortIssuer: "Bco. Galicia",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-05-15", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OT41D",
+
+
+
     ticker: "OT41D",
+
+
+
     isin: "AR000OT41D0000",
+
+
+
     issuer: "Oiltanking Ebytem S.A.",
+
+
+
     shortIssuer: "Oiltanking",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCKD",
+
+
+
     ticker: "YFCKD",
+
+
+
     isin: "AR000YFCKD0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNCAO",
+
+
+
     ticker: "DNCAO",
+
+
+
     isin: "AR000DNCAO0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2027-12-20", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-04-20", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_IRCPC",
+
+
+
     ticker: "IRCPC",
+
+
+
     isin: "AR000IRCPC0000",
+
+
+
     issuer: "IRSA Propiedades Comerciales S.A.",
+
+
+
     shortIssuer: "IRSA Prop. Com.",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-09-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
         { date: "2028-09-15", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCAC",
+
+
+
     ticker: "TTCAC",
+
+
+
     isin: "AR000TTCAC0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-22",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-22", amortization: 33.33, coupon: 3.875, amount: 37.205, residual: 66.67 },
+
+
+
         { date: "2027-06-22", amortization: 33.33, coupon: 3.875, amount: 35.913, residual: 33.34 },
+
+
+
         { date: "2027-08-22", amortization: 33.34, coupon: 3.875, amount: 34.632, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CICAD",
+
+
+
     ticker: "CICAD",
+
+
+
     isin: "AR000CICAD0000",
+
+
+
     issuer: "Cia. de Inversiones de Energia S.A.",
+
+
+
     shortIssuer: "CIESA",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
         { date: "2027-02-15", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OLC6D",
+
+
+
     ticker: "OLC6D",
+
+
+
     isin: "AR000OLC6D0000",
+
+
+
     issuer: "Oleoductos del Valle S.A.",
+
+
+
     shortIssuer: "Oldelval",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-11-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2027-11-20", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCQO",
+
+
+
     ticker: "MGCQO",
+
+
+
     isin: "AR000MGCQO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-11-01",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 92.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-01", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-01", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-01", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2028-06-01", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-11-01", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCZC",
+
+
+
     ticker: "VSCZC",
+
+
+
     isin: "AR000VSCZC0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2028-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
         { date: "2029-06-15", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
         { date: "2029-12-15", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
         { date: "2030-04-15", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNCAD",
+
+
+
     ticker: "DNCAD",
+
+
+
     isin: "AR000DNCAD0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2027-12-20", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2028-04-20", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC9O",
+
+
+
     ticker: "DNC9O",
+
+
+
     isin: "AR000DNC9O0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-10-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2027-10-15", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCNO",
+
+
+
     ticker: "MGCNO",
+
+
+
     isin: "AR000MGCNO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-09-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
         { date: "2027-09-20", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CP38O",
+
+
+
     ticker: "CP38O",
+
+
+
     isin: "AR000CP38O0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-14",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-14", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-06-14", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_ZZC1O",
+
+
+
     ticker: "ZZC1O",
+
+
+
     isin: "AR000ZZC1O0000",
+
+
+
     issuer: "Pampa Energia S.A.",
+
+
+
     shortIssuer: "Pampa Energia",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-01-24",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-24", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-24", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2027-12-24", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-01-24", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCRO",
+
+
+
     ticker: "VSCRO",
+
+
+
     isin: "AR000VSCRO0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-04",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-04", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-04", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-07-04", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TSC4D",
+
+
+
     ticker: "TSC4D",
+
+
+
     isin: "AR000TSC4D0000",
+
+
+
     issuer: "Transportadora de Gas del Sur S.A.",
+
+
+
     shortIssuer: "TGS",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2031-05-02",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2030-06-02", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2030-12-02", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2031-05-02", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCTD",
+
+
+
     ticker: "MGCTD",
+
+
+
     isin: "AR000MGCTD0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-01-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 88.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2028-06-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2028-12-15", amortization: 0.0, coupon: 5.125, amount: 5.125, residual: 100.0 },
+
+
+
         { date: "2029-06-15", amortization: 33.33, coupon: 5.125, amount: 38.455, residual: 66.67 },
+
+
+
         { date: "2029-12-15", amortization: 33.33, coupon: 5.125, amount: 36.747, residual: 33.34 },
+
+
+
         { date: "2030-01-15", amortization: 33.34, coupon: 5.125, amount: 35.049, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTC8O",
+
+
+
     ticker: "TTC8O",
+
+
+
     isin: "AR000TTC8O0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 100.0, coupon: 3.375, amount: 103.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCDO",
+
+
+
     ticker: "TTCDO",
+
+
+
     isin: "AR000TTCDO0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-11-15", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC1O",
+
+
+
     ticker: "PLC1O",
+
+
+
     isin: "AR000PLC1O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCPO",
+
+
+
     ticker: "VSCPO",
+
+
+
     isin: "AR000VSCPO0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MCC1C",
+
+
+
     ticker: "MCC1C",
+
+
+
     isin: "AR000MCC1C0000",
+
+
+
     issuer: "Mastellone Hnos. S.A.",
+
+
+
     shortIssuer: "Mastellone",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-15", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LMS7O",
+
+
+
     ticker: "LMS7O",
+
+
+
     isin: "AR000LMS7O0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-04-15", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CP37D",
+
+
+
     ticker: "CP37D",
+
+
+
     isin: "AR000CP37D0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-08",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-08", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PZCGO",
+
+
+
     ticker: "PZCGO",
+
+
+
     isin: "AR000PZCGO0000",
+
+
+
     issuer: "Autopistas del Sol S.A.",
+
+
+
     shortIssuer: "Ausol",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-11-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-11-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCJO",
+
+
+
     ticker: "YFCJO",
+
+
+
     isin: "AR000YFCJO0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OT42D",
+
+
+
     ticker: "OT42D",
+
+
+
     isin: "AR000OT42D0000",
+
+
+
     issuer: "Oiltanking Ebytem S.A.",
+
+
+
     shortIssuer: "Oiltanking",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-04-25",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-25", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-04-25", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS45O",
+
+
+
     ticker: "CS45O",
+
+
+
     isin: "AR000CS45O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-03",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-03", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BACGC",
+
+
+
     ticker: "BACGC",
+
+
+
     isin: "AR000BACGC0000",
+
+
+
     issuer: "Banco de Galicia y Buenos Aires S.A.U.",
+
+
+
     shortIssuer: "Bco. Galicia",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.3,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-05-15", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BF37D",
+
+
+
     ticker: "BF37D",
+
+
+
     isin: "AR000BF37D0000",
+
+
+
     issuer: "BBVA Argentina S.A.",
+
+
+
     shortIssuer: "BBVA Argentina",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN42O",
+
+
+
     ticker: "PN42O",
+
+
+
     isin: "AR000PN42O0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS48O",
+
+
+
     ticker: "CS48O",
+
+
+
     isin: "AR000CS48O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-11",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-11", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-11", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-08-11", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SBC2O",
+
+
+
     ticker: "SBC2O",
+
+
+
     isin: "AR000SBC2O0000",
+
+
+
     issuer: "Banco Supervielle S.A.",
+
+
+
     shortIssuer: "Bco. Supervielle",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-01-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
         { date: "2027-01-18", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC5D",
+
+
+
     ticker: "PLC5D",
+
+
+
     isin: "AR000PLC5D0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-08-15",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-06-15", amortization: 0.0, coupon: 4.125, amount: 4.125, residual: 100.0 },
+
+
+
         { date: "2027-12-15", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
         { date: "2028-06-15", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
         { date: "2028-08-15", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OTS5O",
+
+
+
     ticker: "OTS5O",
+
+
+
     isin: "AR000OTS5O0000",
+
+
+
     issuer: "Oiltanking Ebytem S.A.",
+
+
+
     shortIssuer: "Oiltanking",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2028-12-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-05-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CP37O",
+
+
+
     ticker: "CP37O",
+
+
+
     isin: "AR000CP37O0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-08",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-08", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNCBD",
+
+
+
     ticker: "DNCBD",
+
+
+
     isin: "AR000DNCBD0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-09-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 91.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2029-06-30", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2029-09-30", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCRD",
+
+
+
     ticker: "MGCRD",
+
+
+
     isin: "AR000MGCRD0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 90.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 33.33, coupon: 5.000, amount: 38.330, residual: 66.67 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 5.000, amount: 36.664, residual: 33.34 },
+
+
+
         { date: "2029-05-30", amortization: 33.34, coupon: 5.000, amount: 35.007, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS52D",
+
+
+
     ticker: "CS52D",
+
+
+
     isin: "AR000CS52D0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-12-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2029-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-12-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC7O",
+
+
+
     ticker: "PLC7O",
+
+
+
     isin: "AR000PLC7O0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-01-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2029-06-10", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2029-12-10", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2030-01-10", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCEO",
+
+
+
     ticker: "TTCEO",
+
+
+
     isin: "AR000TTCEO0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-21",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 96.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-21", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-21", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2028-12-21", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2029-05-21", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_BYCVX",
+
+
+
     ticker: "BYCVX",
+
+
+
     isin: "AR000BYCVX0000",
+
+
+
     issuer: "Albanesi Energia S.A.",
+
+
+
     shortIssuer: "Albanesi",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Pesos Fijos",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-05-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
+
+
+
         { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VBC2C",
+
+
+
     ticker: "VBC2C",
+
+
+
     isin: "AR000VBC2C0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-05", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-12-05", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_RVS1O",
+
+
+
     ticker: "RVS1O",
+
+
+
     isin: "AR000RVS1O0000",
+
+
+
     issuer: "Rava Bursatil S.A.",
+
+
+
     shortIssuer: "RAVA",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-20", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TSC3C",
+
+
+
     ticker: "TSC3C",
+
+
+
     isin: "AR000TSC3C0000",
+
+
+
     issuer: "Transportadora de Gas del Sur S.A.",
+
+
+
     shortIssuer: "TGS",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-02",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 6.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-02", amortization: 100.0, coupon: 3.375, amount: 103.375, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PLC4D",
+
+
+
     ticker: "PLC4D",
+
+
+
     isin: "AR000PLC4D0000",
+
+
+
     issuer: "Pluspetrol S.A.",
+
+
+
     shortIssuer: "Pluspetrol",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.1,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-12-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YFCJC",
+
+
+
     ticker: "YFCJC",
+
+
+
     isin: "AR000YFCJC0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-06-30", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CP38C",
+
+
+
     ticker: "CP38C",
+
+
+
     isin: "AR000CP38C0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-06-14",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-14", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-06-14", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_OZC3O",
+
+
+
     ticker: "OZC3O",
+
+
+
     isin: "AR000OZC3O0000",
+
+
+
     issuer: "TGLT S.A.",
+
+
+
     shortIssuer: "TGLT",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 93.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-30", amortization: 100.0, coupon: 4.750, amount: 104.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCRO",
+
+
+
     ticker: "MGCRO",
+
+
+
     isin: "AR000MGCRO0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 90.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 33.33, coupon: 5.000, amount: 38.330, residual: 66.67 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 5.000, amount: 36.664, residual: 33.34 },
+
+
+
         { date: "2029-05-30", amortization: 33.34, coupon: 5.000, amount: 35.007, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_CS52O",
+
+
+
     ticker: "CS52O",
+
+
+
     isin: "AR000CS52O0000",
+
+
+
     issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
     shortIssuer: "Cresud",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-12-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
         { date: "2028-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2029-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2029-12-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TSC4O",
+
+
+
     ticker: "TSC4O",
+
+
+
     isin: "AR000TSC4O0000",
+
+
+
     issuer: "Transportadora de Gas del Sur S.A.",
+
+
+
     shortIssuer: "TGS",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2031-05-02",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2028-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2029-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2030-06-02", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2030-12-02", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2031-05-02", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC7D",
+
+
+
     ticker: "DNC7D",
+
+
+
     isin: "AR000DNC7D0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2030-05-12",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 90.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2027-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2028-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
         { date: "2029-06-12", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
         { date: "2029-12-12", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
         { date: "2030-05-12", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VBC2D",
+
+
+
     ticker: "VBC2D",
+
+
+
     isin: "AR000VBC2D0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-12-05",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.9,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-05", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-06-05", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2027-12-05", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCQD",
+
+
+
     ticker: "VSCQD",
+
+
+
     isin: "AR000VSCQD0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-03-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.4,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 4.000, amount: 54.000, residual: 50.0 },
+
+
+
         { date: "2027-03-20", amortization: 50.0, coupon: 4.000, amount: 52.000, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_HJCFD",
+
+
+
     ticker: "HJCFD",
+
+
+
     isin: "AR000HJCFD0000",
+
+
+
     issuer: "Holcim Argentina S.A.",
+
+
+
     shortIssuer: "Holcim",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-30", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TLCMO",
+
+
+
     ticker: "TLCMO",
+
+
+
     isin: "AR000TLCMO0000",
+
+
+
     issuer: "Telecom Argentina S.A.",
+
+
+
     shortIssuer: "Telecom",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-18",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.8,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-18", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-06-18", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2027-07-18", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_VSCPC",
+
+
+
     ticker: "VSCPC",
+
+
+
     isin: "AR000VSCPC0000",
+
+
+
     issuer: "Vista Energy Argentina S.A.U.",
+
+
+
     shortIssuer: "Vista Energy",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-12-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_MGCRZ",
+
+
+
     ticker: "MGCRZ",
+
+
+
     isin: "AR000MGCRZ0000",
+
+
+
     issuer: "Generacion Mediterranea S.A.",
+
+
+
     shortIssuer: "Gen. Mediterranea",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Pesos Fijos",
+
+
+
+    instrumentGroup: "Pesos BADLAR",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2029-05-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 10.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 90.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2027-12-30", amortization: 0.0, coupon: 5.000, amount: 5.000, residual: 100.0 },
+
+
+
         { date: "2028-06-30", amortization: 33.33, coupon: 5.000, amount: 38.330, residual: 66.67 },
+
+
+
         { date: "2028-12-30", amortization: 33.33, coupon: 5.000, amount: 36.664, residual: 33.34 },
+
+
+
         { date: "2029-05-30", amortization: 33.34, coupon: 5.000, amount: 35.007, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_SBC1O",
+
+
+
     ticker: "SBC1O",
+
+
+
     isin: "AR000SBC1O0000",
+
+
+
     issuer: "Banco Supervielle S.A.",
+
+
+
     shortIssuer: "Bco. Supervielle",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 100.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-10", amortization: 100.0, coupon: 3.625, amount: 103.625, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_XMC1O",
+
+
+
     ticker: "XMC1O",
+
+
+
     isin: "AR000XMC1O0000",
+
+
+
     issuer: "Xmarts S.A.",
+
+
+
     shortIssuer: "Xmarts",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-11-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-11-20", amortization: 100.0, coupon: 4.250, amount: 104.250, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_LOC5C",
+
+
+
     ticker: "LOC5C",
+
+
+
     isin: "AR000LOC5C0000",
+
+
+
     issuer: "Loma Negra C.I.A.S.A.",
+
+
+
     shortIssuer: "Loma Negra",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "Dólar Linked",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2026-10-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.5,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-10-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_TTCBD",
+
+
+
     ticker: "TTCBD",
+
+
+
     isin: "AR000TTCBD0000",
+
+
+
     issuer: "Tecpetrol S.A.",
+
+
+
     shortIssuer: "Tecpetrol",
+
+
+
     rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-04-10",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-10", amortization: 0.0, coupon: 4.000, amount: 4.000, residual: 100.0 },
+
+
+
         { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
         { date: "2027-12-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
         { date: "2028-04-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_YM35O",
+
+
+
     ticker: "YM35O",
+
+
+
     isin: "AR000YM35O0000",
+
+
+
     issuer: "YPF S.A.",
+
+
+
     shortIssuer: "YPF",
+
+
+
     rating: "BBB+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD Cable",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-07-28",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.0,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 97.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-28", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
         { date: "2027-06-28", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
         { date: "2027-07-28", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_PN36D",
+
+
+
     ticker: "PN36D",
+
+
+
     isin: "AR000PN36D0000",
+
+
+
     issuer: "Pan American Energy Group S.L.",
+
+
+
     shortIssuer: "Pan American",
+
+
+
     rating: "AAA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-01-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 7.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 99.6,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
         { date: "2027-01-20", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DNC5D",
+
+
+
     ticker: "DNC5D",
+
+
+
     isin: "AR000DNC5D0000",
+
+
+
     issuer: "Edenor S.A.",
+
+
+
     shortIssuer: "Edenor",
+
+
+
     rating: "AA+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-02-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.75,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 94.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 50.0, coupon: 4.875, amount: 54.875, residual: 50.0 },
+
+
+
         { date: "2027-02-20", amortization: 50.0, coupon: 4.875, amount: 52.438, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_DEC2D",
+
+
+
     ticker: "DEC2D",
+
+
+
     isin: "AR000DEC2D0000",
+
+
+
     issuer: "DESA Desarrollos S.A.",
+
+
+
     shortIssuer: "DESA",
+
+
+
     rating: "AA(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
+
+
+
     maturity: "2027-08-20",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 9.25,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 95.2,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-20", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
         { date: "2027-06-20", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
         { date: "2027-08-20", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
+
+
+
     id: "bond_NPCEO",
+
+
+
     ticker: "NPCEO",
+
+
+
     isin: "AR000NPCEO0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-06-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CS50D",
-    ticker: "CS50D",
-    isin: "AR000CS50D0000",
-    issuer: "Cresud S.A.C.I.F. y A.",
-    shortIssuer: "Cresud",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-11-03",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-12-03", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2028-06-03", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-11-03", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_SBC3D",
-    ticker: "SBC3D",
-    isin: "AR000SBC3D0000",
-    issuer: "Banco Supervielle S.A.",
-    shortIssuer: "Bco. Supervielle",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-10-05",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.25,
-    frequency: 2,
-    cleanPrice: 98.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-05", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
-        { date: "2027-06-05", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
-        { date: "2027-10-05", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PLC4C",
-    ticker: "PLC4C",
-    isin: "AR000PLC4C0000",
-    issuer: "Pluspetrol S.A.",
-    shortIssuer: "Pluspetrol",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-12-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 98.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-12-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CACDO",
-    ticker: "CACDO",
-    isin: "AR000CACDO0000",
-    issuer: "Capex S.A.",
-    shortIssuer: "Capex",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-08-25",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.25,
-    frequency: 2,
-    cleanPrice: 94.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-12-25", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
-        { date: "2029-06-25", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
-        { date: "2029-08-25", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TLCUD",
-    ticker: "TLCUD",
-    isin: "AR000TLCUD0000",
-    issuer: "Telecom Argentina S.A.",
-    shortIssuer: "Telecom",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-04-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 95.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-06-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2028-06-10", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
-        { date: "2028-12-10", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
-        { date: "2029-04-10", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_SBC2D",
-    ticker: "SBC2D",
-    isin: "AR000SBC2D0000",
-    issuer: "Banco Supervielle S.A.",
-    shortIssuer: "Bco. Supervielle",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-01-18",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.75,
-    frequency: 2,
-    cleanPrice: 99.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-18", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
-        { date: "2027-01-18", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YMCIC",
-    ticker: "YMCIC",
-    isin: "AR000YMCIC0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.0,
-    frequency: 2,
-    cleanPrice: 100.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM35D",
-    ticker: "YM35D",
-    isin: "AR000YM35D0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-07-28",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 97.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-28", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2027-06-28", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2027-07-28", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_MGCOZ",
-    ticker: "MGCOZ",
-    isin: "AR000MGCOZ0000",
-    issuer: "Generacion Mediterranea S.A.",
-    shortIssuer: "Gen. Mediterranea",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Pesos Fijos",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-04-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.75,
-    frequency: 2,
-    cleanPrice: 92.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
-        { date: "2028-04-15", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_DNC7O",
-    ticker: "DNC7O",
-    isin: "AR000DNC7O0000",
-    issuer: "Edenor S.A.",
-    shortIssuer: "Edenor",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2030-05-12",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.75,
-    frequency: 2,
-    cleanPrice: 90.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2027-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2027-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2028-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2028-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2029-06-12", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
-        { date: "2029-12-12", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
-        { date: "2030-05-12", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_RUCDO",
-    ticker: "RUCDO",
-    isin: "AR000RUCDO0000",
-    issuer: "Banco de Entre Rios S.A.",
-    shortIssuer: "Bco. Entre Rios",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-11-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-11-15", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_SNSDD",
-    ticker: "SNSDD",
-    isin: "AR000SNSDD0000",
-    issuer: "S.A. San Miguel A.G.I.C.I. y F.",
-    shortIssuer: "San Miguel",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-08-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.75,
-    frequency: 2,
-    cleanPrice: 93.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
-        { date: "2028-06-20", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
-        { date: "2028-08-20", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_DNC3Y",
-    ticker: "DNC3Y",
-    isin: "AR000DNC3Y0000",
-    issuer: "Edenor S.A.",
-    shortIssuer: "Edenor",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Pesos Fijos",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-11-24",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.75,
-    frequency: 2,
-    cleanPrice: 94.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-11-24", amortization: 100.0, coupon: 4.875, amount: 104.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_MCC3D",
-    ticker: "MCC3D",
-    isin: "AR000MCC3D0000",
-    issuer: "Mastellone Hnos. S.A.",
-    shortIssuer: "Mastellone",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-11-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 95.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TTC9D",
-    ticker: "TTC9D",
-    isin: "AR000TTC9D0000",
-    issuer: "Tecpetrol S.A.",
-    shortIssuer: "Tecpetrol",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-01-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.25,
-    frequency: 2,
-    cleanPrice: 99.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 50.0, coupon: 3.625, amount: 53.625, residual: 50.0 },
-        { date: "2027-01-15", amortization: 50.0, coupon: 3.625, amount: 51.812, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VSCPD",
-    ticker: "VSCPD",
-    isin: "AR000VSCPD0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 100.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PECNO",
-    ticker: "PECNO",
-    isin: "AR000PECNO0000",
-    issuer: "Pan American Energy Group S.L.",
-    shortIssuer: "Pan American",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-12-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 96.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2028-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-12-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YFCGD",
-    ticker: "YFCGD",
-    isin: "AR000YFCGD0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-02-14",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.0,
-    frequency: 2,
-    cleanPrice: 99.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-14", amortization: 50.0, coupon: 3.500, amount: 53.500, residual: 50.0 },
-        { date: "2027-02-14", amortization: 50.0, coupon: 3.500, amount: 51.750, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_LOC5D",
-    ticker: "LOC5D",
-    isin: "AR000LOC5D0000",
-    issuer: "Loma Negra C.I.A.S.A.",
-    shortIssuer: "Loma Negra",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-10-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-10-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PN41D",
-    ticker: "PN41D",
-    isin: "AR000PN41D0000",
-    issuer: "Pan American Energy Group S.L.",
-    shortIssuer: "Pan American",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-11-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 98.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-11-30", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM38O",
-    ticker: "YM38O",
-    isin: "AR000YM38O0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-09-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-09-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CS48D",
-    ticker: "CS48D",
-    isin: "AR000CS48D0000",
-    issuer: "Cresud S.A.C.I.F. y A.",
-    shortIssuer: "Cresud",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-08-11",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 98.6,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-11", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-11", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-08-11", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM34C",
-    ticker: "YM34C",
-    isin: "AR000YM34C0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-31",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
-    frequency: 2,
-    cleanPrice: 98.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-31", amortization: 100.0, coupon: 4.375, amount: 104.375, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM39C",
-    ticker: "YM39C",
-    isin: "AR000YM39C0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-03-23",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 96.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VSCUC",
-    ticker: "VSCUC",
-    isin: "AR000VSCUC0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-03-18",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-18", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-18", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-12-18", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-03-18", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM39O",
-    ticker: "YM39O",
-    isin: "AR000YM39O0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-03-23",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 96.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PN41O",
-    ticker: "PN41O",
-    isin: "AR000PN41O0000",
-    issuer: "Pan American Energy Group S.L.",
-    shortIssuer: "Pan American",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-11-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 98.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-11-30", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_WBS3D",
-    ticker: "WBS3D",
-    isin: "AR000WBS3D0000",
-    issuer: "Werthein S.A.",
-    shortIssuer: "Werthein",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-10-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-10-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_OTS2O",
-    ticker: "OTS2O",
-    isin: "AR000OTS2O0000",
-    issuer: "Oiltanking Ebytem S.A.",
-    shortIssuer: "Oiltanking",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-01-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-01-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_OLC5D",
-    ticker: "OLC5D",
-    isin: "AR000OLC5D0000",
-    issuer: "Oleoductos del Valle S.A.",
-    shortIssuer: "Oldelval",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.75,
-    frequency: 2,
-    cleanPrice: 99.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 100.0, coupon: 3.875, amount: 103.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM41O",
-    ticker: "YM41O",
-    isin: "AR000YM41O0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-11-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 95.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-06-15", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2028-11-15", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_BYCVY",
-    ticker: "BYCVY",
-    isin: "AR000BYCVY0000",
-    issuer: "Albanesi Energia S.A.",
-    shortIssuer: "Albanesi",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Pesos Fijos",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-05-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 94.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
-        { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PQCRD",
-    ticker: "PQCRD",
-    isin: "AR000PQCRD0000",
-    issuer: "Petroquimica Comodoro Rivadavia S.A.",
-    shortIssuer: "PCR",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-11-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 99.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-11-15", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_RC2CO",
-    ticker: "RC2CO",
-    isin: "AR000RC2CO0000",
-    issuer: "Raghsa S.A.",
-    shortIssuer: "Raghsa",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2031-05-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 92.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2029-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2029-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2030-06-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2030-12-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2031-05-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VSCZO",
-    ticker: "VSCZO",
-    isin: "AR000VSCZO0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2030-04-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.25,
-    frequency: 2,
-    cleanPrice: 93.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2029-06-15", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
-        { date: "2029-12-15", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
-        { date: "2030-04-15", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_IRCFD",
-    ticker: "IRCFD",
-    isin: "AR000IRCFD0000",
-    issuer: "IRSA Inversiones y Representaciones S.A.",
-    shortIssuer: "IRSA",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-22",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.0,
-    frequency: 2,
-    cleanPrice: 100.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-22", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PN35D",
-    ticker: "PN35D",
-    isin: "AR000PN35D0000",
-    issuer: "Pan American Energy Group S.L.",
-    shortIssuer: "Pan American",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.0,
-    frequency: 2,
-    cleanPrice: 100.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PQCSO",
-    ticker: "PQCSO",
-    isin: "AR000PQCSO0000",
-    issuer: "Petroquimica Comodoro Rivadavia S.A.",
-    shortIssuer: "PCR",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-07-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
-    frequency: 2,
-    cleanPrice: 97.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
-        { date: "2028-06-20", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
-        { date: "2028-07-20", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_MCC3C",
-    ticker: "MCC3C",
-    isin: "AR000MCC3C0000",
-    issuer: "Mastellone Hnos. S.A.",
-    shortIssuer: "Mastellone",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-11-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 95.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TLCOD",
-    ticker: "TLCOD",
-    isin: "AR000TLCOD0000",
-    issuer: "Telecom Argentina S.A.",
-    shortIssuer: "Telecom",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-08-06",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 99.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-06", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-06", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-08-06", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_EMC1O",
-    ticker: "EMC1O",
-    isin: "AR000EMC1O0000",
-    issuer: "Empresa Distribuidora Sur S.A.",
-    shortIssuer: "Edesur",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-10-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 96.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-10-15", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_OTS2D",
-    ticker: "OTS2D",
-    isin: "AR000OTS2D0000",
-    issuer: "Oiltanking Ebytem S.A.",
-    shortIssuer: "Oiltanking",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-01-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-01-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CICBD",
-    ticker: "CICBD",
-    isin: "AR000CICBD0000",
-    issuer: "Cia. de Inversiones de Energia S.A.",
-    shortIssuer: "CIESA",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-02-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
-        { date: "2027-02-15", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YFCID",
-    ticker: "YFCID",
-    isin: "AR000YFCID0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-03-05",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-05", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
-        { date: "2027-03-05", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_MCC3O",
-    ticker: "MCC3O",
-    isin: "AR000MCC3O0000",
-    issuer: "Mastellone Hnos. S.A.",
-    shortIssuer: "Mastellone",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-11-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 95.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VBC2O",
-    ticker: "VBC2O",
-    isin: "AR000VBC2O0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-12-05",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.9,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-05", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-05", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-12-05", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_LOC6C",
-    ticker: "LOC6C",
-    isin: "AR000LOC6C0000",
-    issuer: "Loma Negra C.I.A.S.A.",
-    shortIssuer: "Loma Negra",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-01-23",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 96.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2028-06-23", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2028-12-23", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2029-01-23", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YFCND",
-    ticker: "YFCND",
-    isin: "AR000YFCND0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-09-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2028-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-09-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_BYCVO",
-    ticker: "BYCVO",
-    isin: "AR000BYCVO0000",
-    issuer: "Albanesi Energia S.A.",
-    shortIssuer: "Albanesi",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-05-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 94.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
-        { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CP40D",
-    ticker: "CP40D",
-    isin: "AR000CP40D0000",
+
+
+
     issuer: "Central Puerto S.A.",
+
+
+
     shortIssuer: "Central Puerto",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-03-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-20", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-12-20", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2028-03-20", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_DEC4D",
-    ticker: "DEC4D",
-    isin: "AR000DEC4D0000",
-    issuer: "DESA Desarrollos S.A.",
-    shortIssuer: "DESA",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-08-20",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.25,
-    frequency: 2,
-    cleanPrice: 95.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-20", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
-        { date: "2027-06-20", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
-        { date: "2027-08-20", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_EAC4O",
-    ticker: "EAC4O",
-    isin: "AR000EAC4O0000",
-    issuer: "MSU Energy S.A.",
-    shortIssuer: "MSU Energy",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-05",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 96.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-05", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CS47C",
-    ticker: "CS47C",
-    isin: "AR000CS47C0000",
-    issuer: "Cresud S.A.C.I.F. y A.",
-    shortIssuer: "Cresud",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-02-26",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-26", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
-        { date: "2027-02-26", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_LQC1O",
-    ticker: "LQC1O",
-    isin: "AR000LQC1O0000",
-    issuer: "Sociedad Comercial del Plata S.A.",
-    shortIssuer: "SCP",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-04-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 97.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
-        { date: "2027-04-10", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM37D",
-    ticker: "YM37D",
-    isin: "AR000YM37D0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-02-12",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 99.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-12", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
-        { date: "2027-02-12", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_IRCOD",
-    ticker: "IRCOD",
-    isin: "AR000IRCOD0000",
-    issuer: "IRSA Inversiones y Representaciones S.A.",
-    shortIssuer: "IRSA",
+
+
+
     rating: "AA-(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-06-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
-    frequency: 2,
-    cleanPrice: 97.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
-        { date: "2027-12-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
-        { date: "2028-06-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PN38D",
-    ticker: "PN38D",
-    isin: "AR000PN38D0000",
-    issuer: "Pan American Energy Group S.L.",
-    shortIssuer: "Pan American",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-05-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.75,
-    frequency: 2,
-    cleanPrice: 99.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
-        { date: "2027-05-15", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM43D",
-    ticker: "YM43D",
-    isin: "AR000YM43D0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2031-06-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 92.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2028-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2028-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2029-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2029-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2030-06-30", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
-        { date: "2030-12-30", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
-        { date: "2031-06-30", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YFCIO",
-    ticker: "YFCIO",
-    isin: "AR000YFCIO0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-03-05",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-05", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
-        { date: "2027-03-05", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VSCRD",
-    ticker: "VSCRD",
-    isin: "AR000VSCRD0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-07-04",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.6,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-04", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-04", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-07-04", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TLCPO",
-    ticker: "TLCPO",
-    isin: "AR000TLCPO0000",
-    issuer: "Telecom Argentina S.A.",
-    shortIssuer: "Telecom",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-11-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.9,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-11-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PLC7C",
-    ticker: "PLC7C",
-    isin: "AR000PLC7C0000",
-    issuer: "Pluspetrol S.A.",
-    shortIssuer: "Pluspetrol",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
+
+
+
     instrumentGroup: "Dólar Linked",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
-    maturity: "2030-01-10",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 94.0,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2029-06-10", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2029-12-10", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2030-01-10", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_OZC3D",
-    ticker: "OZC3D",
-    isin: "AR000OZC3D0000",
-    issuer: "TGLT S.A.",
-    shortIssuer: "TGLT",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-11-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 93.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-11-30", amortization: 100.0, coupon: 4.750, amount: 104.750, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TLCTD",
-    ticker: "TLCTD",
-    isin: "AR000TLCTD0000",
-    issuer: "Telecom Argentina S.A.",
-    shortIssuer: "Telecom",
-    rating: "A+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-07-18",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.5,
-    frequency: 2,
-    cleanPrice: 96.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-06-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
-        { date: "2027-12-18", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
-        { date: "2028-06-18", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
-        { date: "2028-07-18", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM38D",
-    ticker: "YM38D",
-    isin: "AR000YM38D0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-09-30",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.5,
-    frequency: 2,
-    cleanPrice: 98.8,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2027-09-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YMCIO",
-    ticker: "YMCIO",
-    isin: "AR000YMCIO0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2026-12-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.0,
-    frequency: 2,
-    cleanPrice: 100.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_LUC5D",
-    ticker: "LUC5D",
-    isin: "AR000LUC5D0000",
-    issuer: "Molinos Agro S.A.",
-    shortIssuer: "Molinos Agro",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-09-15",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
-    frequency: 2,
-    cleanPrice: 98.4,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-09-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_YM39D",
-    ticker: "YM39D",
-    isin: "AR000YM39D0000",
-    issuer: "YPF S.A.",
-    shortIssuer: "YPF",
-    rating: "AA+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-03-23",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.0,
-    frequency: 2,
-    cleanPrice: 96.5,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
-        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
-        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
-        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_NPCDD",
-    ticker: "NPCDD",
-    isin: "AR000NPCDD0000",
-    issuer: "Compania Gral. de Combustibles S.A.",
-    shortIssuer: "CGC",
-    rating: "AA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
+
+
+
     maturity: "2028-06-30",
+
+
+
     lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
+
+
+
     cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
+
+
+
         { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
         { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
         { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
         { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
-    id: "bond_VSCVO",
-    ticker: "VSCVO",
-    isin: "AR000VSCVO0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
-    rating: "AA-(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD Cable",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2028-10-12",
-    lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
-    frequency: 2,
-    cleanPrice: 97.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-12-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
-        { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
-        { date: "2028-10-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_VSCVD",
-    ticker: "VSCVD",
-    isin: "AR000VSCVD0000",
-    issuer: "Vista Energy Argentina S.A.U.",
-    shortIssuer: "Vista Energy",
+
+
+
+    id: "bond_CS50D",
+
+
+
+    ticker: "CS50D",
+
+
+
+    isin: "AR000CS50D0000",
+
+
+
+    issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
+    shortIssuer: "Cresud",
+
+
+
     rating: "A+(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
-    maturity: "2028-10-12",
+
+
+
+    maturity: "2028-11-03",
+
+
+
     lastCouponDate: "2026-06-30",
-    couponRate: 8.75,
-    frequency: 2,
-    cleanPrice: 97.1,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
-        { date: "2027-12-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
-        { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
-        { date: "2028-10-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_PLC2C",
-    ticker: "PLC2C",
-    isin: "AR000PLC2C0000",
-    issuer: "Pluspetrol S.A.",
-    shortIssuer: "Pluspetrol",
-    rating: "A(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Dólar Linked",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2027-03-01",
-    lastCouponDate: "2026-06-30",
-    couponRate: 7.5,
-    frequency: 2,
-    cleanPrice: 99.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-01", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
-        { date: "2027-03-01", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_CACBD",
-    ticker: "CACBD",
-    isin: "AR000CACBD0000",
-    issuer: "Capex S.A.",
-    shortIssuer: "Capex",
-    rating: "BBB+(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "USD MEP",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2029-08-25",
-    lastCouponDate: "2026-06-30",
-    couponRate: 9.25,
-    frequency: 2,
-    cleanPrice: 94.2,
-    volume30d: "100K",
-    cashFlows: [
-        { date: "2026-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2027-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
-        { date: "2028-12-25", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
-        { date: "2029-06-25", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
-        { date: "2029-08-25", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
-      ]
-  },  {
-    id: "bond_TSC4Z",
-    ticker: "TSC4Z",
-    isin: "AR000TSC4Z0000",
-    issuer: "Transportadora de Gas del Sur S.A.",
-    shortIssuer: "TGS",
-    rating: "AAA(arg)",
-    ratingAgency: "FIX (Fitch)",
-    ratingFix: "A+(arg)",
-    ratingMoodys: "A1.ar",
-    ratingSP: "raA+",
-    ratingScope: "Nacional",
-    ratingGlobal: "CCC+",
-    type: "ON",
-    instrumentGroup: "Pesos Fijos",
-    currency: "Dolar MEP",
-    paymentCurrency: "Dolar MEP",
-    law: "Argentina",
-    isCallable: false,
-    structureType: "Amortizable",
-    couponType: "Fijo",
-    sector: "Energía & Petróleo",
-    maturity: "2031-05-02",
-    lastCouponDate: "2026-06-30",
+
+
+
     couponRate: 8.5,
+
+
+
     frequency: 2,
-    cleanPrice: 94.0,
+
+
+
+    cleanPrice: 97.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
-        { date: "2026-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2027-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2028-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2028-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2029-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2029-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
-        { date: "2030-06-02", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
-        { date: "2030-12-02", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
-        { date: "2031-05-02", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+        { date: "2026-12-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-03", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-12-03", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2028-06-03", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-11-03", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
       ]
+
+
+
   },  {
-    id: "bond_TLCMD",
-    ticker: "TLCMD",
-    isin: "AR000TLCMD0000",
-    issuer: "Telecom Argentina S.A.",
-    shortIssuer: "Telecom",
-    rating: "AA+(arg)",
+
+
+
+    id: "bond_SBC3D",
+
+
+
+    ticker: "SBC3D",
+
+
+
+    isin: "AR000SBC3D0000",
+
+
+
+    issuer: "Banco Supervielle S.A.",
+
+
+
+    shortIssuer: "Bco. Supervielle",
+
+
+
+    rating: "A(arg)",
+
+
+
     ratingAgency: "FIX (Fitch)",
+
+
+
     ratingFix: "A+(arg)",
+
+
+
     ratingMoodys: "A1.ar",
+
+
+
     ratingSP: "raA+",
+
+
+
     ratingScope: "Nacional",
+
+
+
     ratingGlobal: "CCC+",
+
+
+
     type: "ON",
+
+
+
     instrumentGroup: "USD MEP",
+
+
+
     currency: "Dolar MEP",
+
+
+
     paymentCurrency: "Dolar MEP",
+
+
+
     law: "Argentina",
+
+
+
     isCallable: false,
+
+
+
     structureType: "Amortizable",
+
+
+
     couponType: "Fijo",
+
+
+
     sector: "Energía & Petróleo",
-    maturity: "2027-07-18",
+
+
+
+    maturity: "2027-10-05",
+
+
+
     lastCouponDate: "2026-06-30",
-    couponRate: 8.0,
+
+
+
+    couponRate: 8.25,
+
+
+
     frequency: 2,
-    cleanPrice: 99.8,
+
+
+
+    cleanPrice: 98.0,
+
+
+
     volume30d: "100K",
+
+
+
     cashFlows: [
-        { date: "2026-12-18", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
-        { date: "2027-06-18", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
-        { date: "2027-07-18", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+        { date: "2026-12-05", amortization: 33.33, coupon: 4.125, amount: 37.455, residual: 66.67 },
+
+
+
+        { date: "2027-06-05", amortization: 33.33, coupon: 4.125, amount: 36.080, residual: 33.34 },
+
+
+
+        { date: "2027-10-05", amortization: 33.34, coupon: 4.125, amount: 34.715, residual: 0.0 }
+
+
+
       ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PLC4C",
+
+
+
+    ticker: "PLC4C",
+
+
+
+    isin: "AR000PLC4C0000",
+
+
+
+    issuer: "Pluspetrol S.A.",
+
+
+
+    shortIssuer: "Pluspetrol",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-12-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-10", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-12-10", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CACDO",
+
+
+
+    ticker: "CACDO",
+
+
+
+    isin: "AR000CACDO0000",
+
+
+
+    issuer: "Capex S.A.",
+
+
+
+    shortIssuer: "Capex",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-08-25",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-12-25", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
+        { date: "2029-06-25", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
+        { date: "2029-08-25", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TLCUD",
+
+
+
+    ticker: "TLCUD",
+
+
+
+    isin: "AR000TLCUD0000",
+
+
+
+    issuer: "Telecom Argentina S.A.",
+
+
+
+    shortIssuer: "Telecom",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-04-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-06-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-12-10", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2028-06-10", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
+        { date: "2028-12-10", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
+        { date: "2029-04-10", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_SBC2D",
+
+
+
+    ticker: "SBC2D",
+
+
+
+    isin: "AR000SBC2D0000",
+
+
+
+    issuer: "Banco Supervielle S.A.",
+
+
+
+    shortIssuer: "Bco. Supervielle",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-01-18",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-18", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
+        { date: "2027-01-18", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YMCIC",
+
+
+
+    ticker: "YMCIC",
+
+
+
+    isin: "AR000YMCIC0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 100.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM35D",
+
+
+
+    ticker: "YM35D",
+
+
+
+    isin: "AR000YM35D0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-07-28",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-28", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2027-06-28", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2027-07-28", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_MGCOZ",
+
+
+
+    ticker: "MGCOZ",
+
+
+
+    isin: "AR000MGCOZ0000",
+
+
+
+    issuer: "Generacion Mediterranea S.A.",
+
+
+
+    shortIssuer: "Gen. Mediterranea",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Pesos BADLAR",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-04-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 92.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
+        { date: "2028-04-15", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_DNC7O",
+
+
+
+    ticker: "DNC7O",
+
+
+
+    isin: "AR000DNC7O0000",
+
+
+
+    issuer: "Edenor S.A.",
+
+
+
+    shortIssuer: "Edenor",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2030-05-12",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 90.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2027-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2027-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2028-06-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2028-12-12", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2029-06-12", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
+        { date: "2029-12-12", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
+        { date: "2030-05-12", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_RUCDO",
+
+
+
+    ticker: "RUCDO",
+
+
+
+    isin: "AR000RUCDO0000",
+
+
+
+    issuer: "Banco de Entre Rios S.A.",
+
+
+
+    shortIssuer: "Bco. Entre Rios",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-11-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-11-15", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_SNSDD",
+
+
+
+    ticker: "SNSDD",
+
+
+
+    isin: "AR000SNSDD0000",
+
+
+
+    issuer: "S.A. San Miguel A.G.I.C.I. y F.",
+
+
+
+    shortIssuer: "San Miguel",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-08-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 93.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.875, amount: 4.875, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.875, amount: 38.205, residual: 66.67 },
+
+
+
+        { date: "2028-06-20", amortization: 33.33, coupon: 4.875, amount: 36.580, residual: 33.34 },
+
+
+
+        { date: "2028-08-20", amortization: 33.34, coupon: 4.875, amount: 34.965, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_DNC3Y",
+
+
+
+    ticker: "DNC3Y",
+
+
+
+    isin: "AR000DNC3Y0000",
+
+
+
+    issuer: "Edenor S.A.",
+
+
+
+    shortIssuer: "Edenor",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Pesos TAMAR",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-11-24",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-11-24", amortization: 100.0, coupon: 4.875, amount: 104.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_MCC3D",
+
+
+
+    ticker: "MCC3D",
+
+
+
+    isin: "AR000MCC3D0000",
+
+
+
+    issuer: "Mastellone Hnos. S.A.",
+
+
+
+    shortIssuer: "Mastellone",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-11-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TTC9D",
+
+
+
+    ticker: "TTC9D",
+
+
+
+    isin: "AR000TTC9D0000",
+
+
+
+    issuer: "Tecpetrol S.A.",
+
+
+
+    shortIssuer: "Tecpetrol",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-01-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 50.0, coupon: 3.625, amount: 53.625, residual: 50.0 },
+
+
+
+        { date: "2027-01-15", amortization: 50.0, coupon: 3.625, amount: 51.812, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCPD",
+
+
+
+    ticker: "VSCPD",
+
+
+
+    isin: "AR000VSCPD0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 100.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PECNO",
+
+
+
+    ticker: "PECNO",
+
+
+
+    isin: "AR000PECNO0000",
+
+
+
+    issuer: "Pan American Energy Group S.L.",
+
+
+
+    shortIssuer: "Pan American",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-12-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2028-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-12-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YFCGD",
+
+
+
+    ticker: "YFCGD",
+
+
+
+    isin: "AR000YFCGD0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-02-14",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-14", amortization: 50.0, coupon: 3.500, amount: 53.500, residual: 50.0 },
+
+
+
+        { date: "2027-02-14", amortization: 50.0, coupon: 3.500, amount: 51.750, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_LOC5D",
+
+
+
+    ticker: "LOC5D",
+
+
+
+    isin: "AR000LOC5D0000",
+
+
+
+    issuer: "Loma Negra C.I.A.S.A.",
+
+
+
+    shortIssuer: "Loma Negra",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-10-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-10-10", amortization: 100.0, coupon: 3.750, amount: 103.750, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PN41D",
+
+
+
+    ticker: "PN41D",
+
+
+
+    isin: "AR000PN41D0000",
+
+
+
+    issuer: "Pan American Energy Group S.L.",
+
+
+
+    shortIssuer: "Pan American",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-11-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-11-30", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM38O",
+
+
+
+    ticker: "YM38O",
+
+
+
+    isin: "AR000YM38O0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-09-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-09-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CS48D",
+
+
+
+    ticker: "CS48D",
+
+
+
+    isin: "AR000CS48D0000",
+
+
+
+    issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
+    shortIssuer: "Cresud",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-08-11",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.6,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-11", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-11", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-08-11", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM34C",
+
+
+
+    ticker: "YM34C",
+
+
+
+    isin: "AR000YM34C0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Nueva York",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2034-01-17",
+
+
+
+    lastCouponDate: "2026-07-17",
+
+
+
+    couponRate: 8.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 110.23,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-31", amortization: 100.0, coupon: 4.375, amount: 104.375, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM39C",
+
+
+
+    ticker: "YM39C",
+
+
+
+    isin: "AR000YM39C0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-03-23",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCUC",
+
+
+
+    ticker: "VSCUC",
+
+
+
+    isin: "AR000VSCUC0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-03-18",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-18", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-18", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-12-18", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-03-18", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM39O",
+
+
+
+    ticker: "YM39O",
+
+
+
+    isin: "AR000YM39O0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-03-23",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PN41O",
+
+
+
+    ticker: "PN41O",
+
+
+
+    isin: "AR000PN41O0000",
+
+
+
+    issuer: "Pan American Energy Group S.L.",
+
+
+
+    shortIssuer: "Pan American",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-11-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-11-30", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_WBS3D",
+
+
+
+    ticker: "WBS3D",
+
+
+
+    isin: "AR000WBS3D0000",
+
+
+
+    issuer: "Werthein S.A.",
+
+
+
+    shortIssuer: "Werthein",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-10-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-10-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_OTS2O",
+
+
+
+    ticker: "OTS2O",
+
+
+
+    isin: "AR000OTS2O0000",
+
+
+
+    issuer: "Oiltanking Ebytem S.A.",
+
+
+
+    shortIssuer: "Oiltanking",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-01-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-01-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_OLC5D",
+
+
+
+    ticker: "OLC5D",
+
+
+
+    isin: "AR000OLC5D0000",
+
+
+
+    issuer: "Oleoductos del Valle S.A.",
+
+
+
+    shortIssuer: "Oldelval",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 100.0, coupon: 3.875, amount: 103.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM41O",
+
+
+
+    ticker: "YM41O",
+
+
+
+    isin: "AR000YM41O0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-11-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-06-15", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2028-11-15", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_BYCVY",
+
+
+
+    ticker: "BYCVY",
+
+
+
+    isin: "AR000BYCVY0000",
+
+
+
+    issuer: "Albanesi Energia S.A.",
+
+
+
+    shortIssuer: "Albanesi",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Pesos TAMAR",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-05-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
+
+
+
+        { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PQCRD",
+
+
+
+    ticker: "PQCRD",
+
+
+
+    isin: "AR000PQCRD0000",
+
+
+
+    issuer: "Petroquimica Comodoro Rivadavia S.A.",
+
+
+
+    shortIssuer: "PCR",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-11-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-11-15", amortization: 100.0, coupon: 4.000, amount: 104.000, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_RC2CO",
+
+
+
+    ticker: "RC2CO",
+
+
+
+    isin: "AR000RC2CO0000",
+
+
+
+    issuer: "Raghsa S.A.",
+
+
+
+    shortIssuer: "Raghsa",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2031-05-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 92.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2029-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2029-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2030-06-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2030-12-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2031-05-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCZO",
+
+
+
+    ticker: "VSCZO",
+
+
+
+    isin: "AR000VSCZO0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2030-04-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 93.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-06-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-12-15", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2029-06-15", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
+        { date: "2029-12-15", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
+        { date: "2030-04-15", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_IRCFD",
+
+
+
+    ticker: "IRCFD",
+
+
+
+    isin: "AR000IRCFD0000",
+
+
+
+    issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
+    shortIssuer: "IRSA",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-22",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 100.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-22", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PN35D",
+
+
+
+    ticker: "PN35D",
+
+
+
+    isin: "AR000PN35D0000",
+
+
+
+    issuer: "Pan American Energy Group S.L.",
+
+
+
+    shortIssuer: "Pan American",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 100.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PQCSO",
+
+
+
+    ticker: "PQCSO",
+
+
+
+    isin: "AR000PQCSO0000",
+
+
+
+    issuer: "Petroquimica Comodoro Rivadavia S.A.",
+
+
+
+    shortIssuer: "PCR",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-07-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
+        { date: "2028-06-20", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
+        { date: "2028-07-20", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_MCC3C",
+
+
+
+    ticker: "MCC3C",
+
+
+
+    isin: "AR000MCC3C0000",
+
+
+
+    issuer: "Mastellone Hnos. S.A.",
+
+
+
+    shortIssuer: "Mastellone",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-11-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TLCOD",
+
+
+
+    ticker: "TLCOD",
+
+
+
+    isin: "AR000TLCOD0000",
+
+
+
+    issuer: "Telecom Argentina S.A.",
+
+
+
+    shortIssuer: "Telecom",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-08-06",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-06", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-06", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-08-06", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_EMC1O",
+
+
+
+    ticker: "EMC1O",
+
+
+
+    isin: "AR000EMC1O0000",
+
+
+
+    issuer: "Empresa Distribuidora Sur S.A.",
+
+
+
+    shortIssuer: "Edesur",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-10-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-10-15", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_OTS2D",
+
+
+
+    ticker: "OTS2D",
+
+
+
+    isin: "AR000OTS2D0000",
+
+
+
+    issuer: "Oiltanking Ebytem S.A.",
+
+
+
+    shortIssuer: "Oiltanking",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-01-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-01-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CICBD",
+
+
+
+    ticker: "CICBD",
+
+
+
+    isin: "AR000CICBD0000",
+
+
+
+    issuer: "Cia. de Inversiones de Energia S.A.",
+
+
+
+    shortIssuer: "CIESA",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-02-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
+        { date: "2027-02-15", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YFCID",
+
+
+
+    ticker: "YFCID",
+
+
+
+    isin: "AR000YFCID0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-03-05",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-05", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
+        { date: "2027-03-05", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_MCC3O",
+
+
+
+    ticker: "MCC3O",
+
+
+
+    isin: "AR000MCC3O0000",
+
+
+
+    issuer: "Mastellone Hnos. S.A.",
+
+
+
+    shortIssuer: "Mastellone",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-11-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-06-20", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2028-11-20", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VBC2O",
+
+
+
+    ticker: "VBC2O",
+
+
+
+    isin: "AR000VBC2O0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-12-05",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.9,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-05", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-05", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-12-05", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_LOC6C",
+
+
+
+    ticker: "LOC6C",
+
+
+
+    isin: "AR000LOC6C0000",
+
+
+
+    issuer: "Loma Negra C.I.A.S.A.",
+
+
+
+    shortIssuer: "Loma Negra",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-01-23",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-12-23", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2028-06-23", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2028-12-23", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2029-01-23", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YFCND",
+
+
+
+    ticker: "YFCND",
+
+
+
+    isin: "AR000YFCND0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-09-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-15", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2028-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-09-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_BYCVO",
+
+
+
+    ticker: "BYCVO",
+
+
+
+    isin: "AR000BYCVO0000",
+
+
+
+    issuer: "Albanesi Energia S.A.",
+
+
+
+    shortIssuer: "Albanesi",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-05-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 50.0, coupon: 4.750, amount: 54.750, residual: 50.0 },
+
+
+
+        { date: "2027-05-30", amortization: 50.0, coupon: 4.750, amount: 52.375, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CP40D",
+
+
+
+    ticker: "CP40D",
+
+
+
+    isin: "AR000CP40D0000",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-03-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-20", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-12-20", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-03-20", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_DEC4D",
+
+
+
+    ticker: "DEC4D",
+
+
+
+    isin: "AR000DEC4D0000",
+
+
+
+    issuer: "DESA Desarrollos S.A.",
+
+
+
+    shortIssuer: "DESA",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-08-20",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 95.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-20", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
+        { date: "2027-06-20", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
+        { date: "2027-08-20", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_EAC4O",
+
+
+
+    ticker: "EAC4O",
+
+
+
+    isin: "AR000EAC4O0000",
+
+
+
+    issuer: "MSU Energy S.A.",
+
+
+
+    shortIssuer: "MSU Energy",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-05",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-05", amortization: 100.0, coupon: 4.500, amount: 104.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CS47C",
+
+
+
+    ticker: "CS47C",
+
+
+
+    isin: "AR000CS47C0000",
+
+
+
+    issuer: "Cresud S.A.C.I.F. y A.",
+
+
+
+    shortIssuer: "Cresud",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-02-26",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-26", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
+        { date: "2027-02-26", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_LQC1O",
+
+
+
+    ticker: "LQC1O",
+
+
+
+    isin: "AR000LQC1O0000",
+
+
+
+    issuer: "Sociedad Comercial del Plata S.A.",
+
+
+
+    shortIssuer: "SCP",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-04-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
+        { date: "2027-04-10", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM37D",
+
+
+
+    ticker: "YM37D",
+
+
+
+    isin: "AR000YM37D0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-02-12",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-12", amortization: 50.0, coupon: 4.250, amount: 54.250, residual: 50.0 },
+
+
+
+        { date: "2027-02-12", amortization: 50.0, coupon: 4.250, amount: 52.125, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_IRCOD",
+
+
+
+    ticker: "IRCOD",
+
+
+
+    isin: "AR000IRCOD0000",
+
+
+
+    issuer: "IRSA Inversiones y Representaciones S.A.",
+
+
+
+    shortIssuer: "IRSA",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-06-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
+        { date: "2027-12-30", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
+        { date: "2028-06-30", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PN38D",
+
+
+
+    ticker: "PN38D",
+
+
+
+    isin: "AR000PN38D0000",
+
+
+
+    issuer: "Pan American Energy Group S.L.",
+
+
+
+    shortIssuer: "Pan American",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-05-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 50.0, coupon: 3.875, amount: 53.875, residual: 50.0 },
+
+
+
+        { date: "2027-05-15", amortization: 50.0, coupon: 3.875, amount: 51.938, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM43D",
+
+
+
+    ticker: "YM43D",
+
+
+
+    isin: "AR000YM43D0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2031-06-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 92.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2028-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2028-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2029-06-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2029-12-30", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2030-06-30", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
+        { date: "2030-12-30", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
+        { date: "2031-06-30", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YFCIO",
+
+
+
+    ticker: "YFCIO",
+
+
+
+    isin: "AR000YFCIO0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-03-05",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-05", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
+        { date: "2027-03-05", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCRD",
+
+
+
+    ticker: "VSCRD",
+
+
+
+    isin: "AR000VSCRD0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-07-04",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.6,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-04", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-04", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-07-04", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TLCPO",
+
+
+
+    ticker: "TLCPO",
+
+
+
+    isin: "AR000TLCPO0000",
+
+
+
+    issuer: "Telecom Argentina S.A.",
+
+
+
+    shortIssuer: "Telecom",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-11-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.9,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-11-15", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PLC7C",
+
+
+
+    ticker: "PLC7C",
+
+
+
+    isin: "AR000PLC7C0000",
+
+
+
+    issuer: "Pluspetrol S.A.",
+
+
+
+    shortIssuer: "Pluspetrol",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2030-01-10",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-06-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-12-10", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2029-06-10", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2029-12-10", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2030-01-10", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_OZC3D",
+
+
+
+    ticker: "OZC3D",
+
+
+
+    isin: "AR000OZC3D0000",
+
+
+
+    issuer: "TGLT S.A.",
+
+
+
+    shortIssuer: "TGLT",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-11-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 93.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-11-30", amortization: 100.0, coupon: 4.750, amount: 104.750, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TLCTD",
+
+
+
+    ticker: "TLCTD",
+
+
+
+    isin: "AR000TLCTD0000",
+
+
+
+    issuer: "Telecom Argentina S.A.",
+
+
+
+    shortIssuer: "Telecom",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-07-18",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-06-18", amortization: 0.0, coupon: 4.750, amount: 4.750, residual: 100.0 },
+
+
+
+        { date: "2027-12-18", amortization: 33.33, coupon: 4.750, amount: 38.080, residual: 66.67 },
+
+
+
+        { date: "2028-06-18", amortization: 33.33, coupon: 4.750, amount: 36.497, residual: 33.34 },
+
+
+
+        { date: "2028-07-18", amortization: 33.34, coupon: 4.750, amount: 34.924, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM38D",
+
+
+
+    ticker: "YM38D",
+
+
+
+    isin: "AR000YM38D0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-09-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2027-09-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YMCIO",
+
+
+
+    ticker: "YMCIO",
+
+
+
+    isin: "AR000YMCIO0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2026-12-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 100.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 100.0, coupon: 3.500, amount: 103.500, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_LUC5D",
+
+
+
+    ticker: "LUC5D",
+
+
+
+    isin: "AR000LUC5D0000",
+
+
+
+    issuer: "Molinos Agro S.A.",
+
+
+
+    shortIssuer: "Molinos Agro",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-09-15",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.4,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-15", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-15", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-09-15", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_YM39D",
+
+
+
+    ticker: "YM39D",
+
+
+
+    isin: "AR000YM39D0000",
+
+
+
+    issuer: "YPF S.A.",
+
+
+
+    shortIssuer: "YPF",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-03-23",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 96.5,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-06-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2027-12-23", amortization: 0.0, coupon: 4.500, amount: 4.500, residual: 100.0 },
+
+
+
+        { date: "2028-06-23", amortization: 33.33, coupon: 4.500, amount: 37.830, residual: 66.67 },
+
+
+
+        { date: "2028-12-23", amortization: 33.33, coupon: 4.500, amount: 36.330, residual: 33.34 },
+
+
+
+        { date: "2029-03-23", amortization: 33.34, coupon: 4.500, amount: 34.840, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_NPCDD",
+
+
+
+    ticker: "NPCDD",
+
+
+
+    isin: "AR000NPCDD0000",
+
+
+
+    issuer: "Central Puerto S.A.",
+
+
+
+    shortIssuer: "Central Puerto",
+
+
+
+    rating: "AA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-06-30",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 98.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-30", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-30", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2027-12-30", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2028-06-30", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCVO",
+
+
+
+    ticker: "VSCVO",
+
+
+
+    isin: "AR000VSCVO0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "AA-(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Dólar Linked",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-10-12",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-12-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
+        { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
+        { date: "2028-10-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_VSCVD",
+
+
+
+    ticker: "VSCVD",
+
+
+
+    isin: "AR000VSCVD0000",
+
+
+
+    issuer: "Vista Energy Argentina S.A.U.",
+
+
+
+    shortIssuer: "Vista Energy",
+
+
+
+    rating: "A+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2028-10-12",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.75,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 97.1,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-06-12", amortization: 0.0, coupon: 4.375, amount: 4.375, residual: 100.0 },
+
+
+
+        { date: "2027-12-12", amortization: 33.33, coupon: 4.375, amount: 37.705, residual: 66.67 },
+
+
+
+        { date: "2028-06-12", amortization: 33.33, coupon: 4.375, amount: 36.247, residual: 33.34 },
+
+
+
+        { date: "2028-10-12", amortization: 33.34, coupon: 4.375, amount: 34.799, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_PLC2C",
+
+
+
+    ticker: "PLC2C",
+
+
+
+    isin: "AR000PLC2C0000",
+
+
+
+    issuer: "Pluspetrol S.A.",
+
+
+
+    shortIssuer: "Pluspetrol",
+
+
+
+    rating: "A(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD Cable",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-03-01",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 7.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-01", amortization: 50.0, coupon: 3.750, amount: 53.750, residual: 50.0 },
+
+
+
+        { date: "2027-03-01", amortization: 50.0, coupon: 3.750, amount: 51.875, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_CACBD",
+
+
+
+    ticker: "CACBD",
+
+
+
+    isin: "AR000CACBD0000",
+
+
+
+    issuer: "Capex S.A.",
+
+
+
+    shortIssuer: "Capex",
+
+
+
+    rating: "BBB+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2029-08-25",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 9.25,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.2,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2027-12-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-06-25", amortization: 0.0, coupon: 4.625, amount: 4.625, residual: 100.0 },
+
+
+
+        { date: "2028-12-25", amortization: 33.33, coupon: 4.625, amount: 37.955, residual: 66.67 },
+
+
+
+        { date: "2029-06-25", amortization: 33.33, coupon: 4.625, amount: 36.413, residual: 33.34 },
+
+
+
+        { date: "2029-08-25", amortization: 33.34, coupon: 4.625, amount: 34.882, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TSC4Z",
+
+
+
+    ticker: "TSC4Z",
+
+
+
+    isin: "AR000TSC4Z0000",
+
+
+
+    issuer: "Transportadora de Gas del Sur S.A.",
+
+
+
+    shortIssuer: "TGS",
+
+
+
+    rating: "AAA(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "Pesos BADLAR",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2031-05-02",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.5,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 94.0,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2027-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2028-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2028-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2029-06-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2029-12-02", amortization: 0.0, coupon: 4.250, amount: 4.250, residual: 100.0 },
+
+
+
+        { date: "2030-06-02", amortization: 33.33, coupon: 4.250, amount: 37.580, residual: 66.67 },
+
+
+
+        { date: "2030-12-02", amortization: 33.33, coupon: 4.250, amount: 36.163, residual: 33.34 },
+
+
+
+        { date: "2031-05-02", amortization: 33.34, coupon: 4.250, amount: 34.757, residual: 0.0 }
+
+
+
+      ]
+
+
+
+  },  {
+
+
+
+    id: "bond_TLCMD",
+
+
+
+    ticker: "TLCMD",
+
+
+
+    isin: "AR000TLCMD0000",
+
+
+
+    issuer: "Telecom Argentina S.A.",
+
+
+
+    shortIssuer: "Telecom",
+
+
+
+    rating: "AA+(arg)",
+
+
+
+    ratingAgency: "FIX (Fitch)",
+
+
+
+    ratingFix: "A+(arg)",
+
+
+
+    ratingMoodys: "A1.ar",
+
+
+
+    ratingSP: "raA+",
+
+
+
+    ratingScope: "Nacional",
+
+
+
+    ratingGlobal: "CCC+",
+
+
+
+    type: "ON",
+
+
+
+    instrumentGroup: "USD MEP",
+
+
+
+    currency: "Dolar MEP",
+
+
+
+    paymentCurrency: "Dolar MEP",
+
+
+
+    law: "Argentina",
+
+
+
+    isCallable: false,
+
+
+
+    structureType: "Amortizable",
+
+
+
+    couponType: "Fijo",
+
+
+
+    sector: "Energía & Petróleo",
+
+
+
+    maturity: "2027-07-18",
+
+
+
+    lastCouponDate: "2026-06-30",
+
+
+
+    couponRate: 8.0,
+
+
+
+    frequency: 2,
+
+
+
+    cleanPrice: 99.8,
+
+
+
+    volume30d: "100K",
+
+
+
+    cashFlows: [
+
+
+
+        { date: "2026-12-18", amortization: 33.33, coupon: 4.000, amount: 37.330, residual: 66.67 },
+
+
+
+        { date: "2027-06-18", amortization: 33.33, coupon: 4.000, amount: 35.997, residual: 33.34 },
+
+
+
+        { date: "2027-07-18", amortization: 33.34, coupon: 4.000, amount: 34.674, residual: 0.0 }
+
+
+
+      ]
+
+
+
   },];
+
+
+
 export const RATINGS_LIST = ['AAA(arg)', 'AA+(arg)', 'AA(arg)', 'AA-(arg)', 'A+(arg)', 'CCC(int)'];
+
+
+
 export const SECTORS_LIST = ['EnergÃ­a & PetrÃ³leo', 'Telecomunicaciones', 'Real Estate & Agro', 'Servicios PÃºblicos', 'Soberano'];
+
+
+
 export const RATING_EQUIVALENCE_TABLE = [
+
+
+
   { grade: 'MÃ¡xima Seguridad', fix: 'AAA(arg)', moodys: 'Aaa.ar', sp: 'raAAA', globalEquivalent: 'CCC+' },
+
+
+
   { grade: 'Muy Alta Calidad', fix: 'AA(arg)', moodys: 'Aa2.ar', sp: 'raAA', globalEquivalent: 'CCC' },
+
+
+
   { grade: 'Alta Calidad', fix: 'A(arg)', moodys: 'A2.ar', sp: 'raA', globalEquivalent: 'CC' }
+
+
+
 ];
+
+
+

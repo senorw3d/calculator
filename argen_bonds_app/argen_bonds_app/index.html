@@ -179,18 +179,34 @@
       </div>
 
       <!-- Financial Metrics & Interactive Calculator -->
-      <h3 class="serif-heading text-cyan" style="font-size: 1.1rem; margin-bottom: 0.75rem;">Calculadora de Renta Fija en Tiempo Real</h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h3 class="serif-heading text-cyan" style="font-size: 1.1rem; margin: 0;">Calculadora de Renta Fija en Tiempo Real</h3>
+        <div class="calc-currency-selector" style="display: flex; gap: 0.4rem; align-items: center;">
+          <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-dim);">Moneda de Cálculo:</span>
+          <button type="button" class="btn-calc-curr active" data-curr="MEP">Dólar MEP</button>
+          <button type="button" class="btn-calc-curr" data-curr="CCL">Dólar Cable (CCL)</button>
+          <button type="button" class="btn-calc-curr" data-curr="ARS">Pesos (ARS)</button>
+        </div>
+      </div>
+
+      <!-- FX Rate Bar -->
+      <div id="fx-rate-container" style="display: flex; gap: 0.75rem; margin-bottom: 0.75rem; align-items: center; background: var(--bg-card-hover); padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+        <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Tipo de Cambio Implícito (TC):</label>
+        <input type="number" id="calc-fx-rate" class="num-tabular" value="1280.00" style="width: 110px; padding: 4px 8px; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        <span style="font-size: 0.75rem; color: var(--text-dim);">(ARS / USD)</span>
+      </div>
+
       <div class="calc-grid">
         <div class="calc-field">
-          <label>Precio Limpio (Clean Price)</label>
+          <label id="lbl-clean-price">Precio Limpio (Clean Price)</label>
           <input type="number" id="calc-clean-price" class="num-tabular" step="0.1" value="100.0">
         </div>
         <div class="calc-field">
-          <label>Interés Corrido (IC)</label>
+          <label id="lbl-accrued-interest">Interés Corrido (IC)</label>
           <input type="text" id="calc-accrued-interest" class="num-tabular" readonly value="0.00">
         </div>
         <div class="calc-field">
-          <label>Precio Sucio (Dirty Price)</label>
+          <label id="lbl-dirty-price">Precio Sucio (Dirty Price)</label>
           <input type="text" id="calc-dirty-price" class="num-tabular" readonly value="0.00">
         </div>
         <div class="calc-field">

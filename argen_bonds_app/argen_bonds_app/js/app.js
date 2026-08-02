@@ -86,13 +86,108 @@ class TradingDeskApp {
     }
   }
 
+  generateCashFlows(bond) {
+    if (!bond.maturity) return bond.cashFlows || [];
+    
+    const matParts = bond.maturity.split('-');
+    if (matParts.length !== 3) return bond.cashFlows || [];
+    const matYear = parseInt(matParts[0]);
+    const matMonth = parseInt(matParts[1]);
+    const matDay = parseInt(matParts[2]);
+    
+    const freq = bond.frequency || 2;
+    const intervalMonths = 12 / freq;
+
+    let startYear = 2025;
+    let startMonth = matMonth;
+
+    const flowDates = [];
+    let curY = startYear;
+    let curM = startMonth;
+
+    while (curY > 2025 || (curY === 2025 && curM > 1)) {
+      curM -= intervalMonths;
+      if (curM <= 0) {
+        curM += 12;
+        curY -= 1;
+      }
+    }
+
+    while (curY < matYear || (curY === matYear && curM <= matMonth)) {
+      const formattedDate = `${curY}-${String(curM).padStart(2, '0')}-${String(matDay).padStart(2, '0')}`;
+      if (!flowDates.includes(formattedDate)) {
+        flowDates.push(formattedDate);
+      }
+      curM += intervalMonths;
+      if (curM > 12) {
+        curM -= 12;
+        curY += 1;
+      }
+    }
+
+    if (!flowDates.includes(bond.maturity)) {
+      flowDates.push(bond.maturity);
+    }
+    flowDates.sort();
+
+    const n = flowDates.length;
+    let residual = 100.0;
+    const couponRate = bond.couponRate || 8.0;
+    const periodCouponPct = couponRate / freq;
+    
+    const isAmortizable = bond.structureType === 'Amortizable';
+    const amortYears = [matYear - 2, matYear - 1, matYear];
+
+    const result = [];
+    for (let i = 0; i < n; i++) {
+      const dateStr = flowDates[i];
+      const parts = dateStr.split('-');
+      const y = parseInt(parts[0]);
+      const m = parseInt(parts[1]);
+      const isLast = (i === n - 1);
+      
+      let amort = 0;
+      if (isAmortizable && m === matMonth && amortYears.includes(y)) {
+        if (y === matYear) {
+          amort = residual;
+        } else {
+          amort = 33.33;
+        }
+      } else if (!isAmortizable && isLast) {
+        amort = 100.0;
+      }
+
+      if (isLast) {
+        amort = residual;
+      }
+
+      const cpnAmount = Number(((residual * periodCouponPct) / 100.0).toFixed(3));
+      const totalAmount = Number((amort + cpnAmount).toFixed(3));
+      const nextResidual = Math.max(0, Number((residual - amort).toFixed(2)));
+
+      result.push({
+        date: dateStr,
+        amortization: amort,
+        coupon: Number(periodCouponPct.toFixed(3)),
+        amount: totalAmount,
+        residual: nextResidual
+      });
+
+      residual = nextResidual;
+    }
+
+    return result;
+  }
+
   recalculateAllBonds() {
     const settlementDate = FinancialMath.getSettlementDate(this.settlementMode);
 
     this.calculatedBonds = this.bonds.map(bond => {
+      const cashFlows = this.generateCashFlows(bond);
+
       const accruedInterest = FinancialMath.calculateAccruedInterest(
         bond.couponRate,
-        bond.lastCouponDate,
+        bond.lastCouponDate || '2026-01-01',
         settlementDate,
         '30/360',
         100
@@ -104,14 +199,14 @@ class TradingDeskApp {
 
       const tir = FinancialMath.calculateTIR(
         dirtyPrice,
-        bond.cashFlows,
+        cashFlows,
         settlementDate,
         bond.frequency
       );
 
       const { macaulayDuration, modifiedDuration, convexity, dv01 } = FinancialMath.calculateRiskMetrics(
         dirtyPrice,
-        bond.cashFlows,
+        cashFlows,
         tir,
         settlementDate,
         bond.frequency
@@ -119,6 +214,7 @@ class TradingDeskApp {
 
       return {
         ...bond,
+        cashFlows,
         settlementDate,
         accruedInterest: Number(accruedInterest.toFixed(2)),
         dirtyPrice: Number(dirtyPrice.toFixed(2)),
@@ -238,11 +334,27 @@ class TradingDeskApp {
     // Bond Detail Modal Close
     document.getElementById('modal-close-btn')?.addEventListener('click', () => {
       document.getElementById('bond-modal')?.classList.remove('active');
-    });
-
-    // Modal Real-Time Calculator Listeners
+    }    // Modal Real-Time Calculator Listeners
     const calcCleanInput = document.getElementById('calc-clean-price');
     const calcTirInput = document.getElementById('calc-result-tir');
+    const fxRateInput = document.getElementById('calc-fx-rate');
+
+    this.modalCurrency = 'MEP'; // Default 'MEP', 'CCL', 'ARS'
+
+    document.querySelectorAll('.btn-calc-curr').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.btn-calc-curr').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.modalCurrency = btn.dataset.curr;
+        this.refreshModalCurrencyView();
+      });
+    });
+
+    fxRateInput?.addEventListener('input', () => {
+      if (this.modalCurrency === 'ARS') {
+        this.refreshModalCurrencyView();
+      }
+    });
 
     calcCleanInput?.addEventListener('input', (e) => {
       const newCleanPrice = parseFloat(e.target.value);
@@ -284,8 +396,6 @@ class TradingDeskApp {
       return matchSearch && matchGroup && matchRating;
     });
   }
-
-
 
   updateDashboard() {
     const filteredBonds = this.getFilteredBonds();
@@ -374,15 +484,42 @@ class TradingDeskApp {
     this.requestDashboardUpdate();
   }
 
+  getFxRate() {
+    const fxInput = document.getElementById('calc-fx-rate');
+    return (fxInput && parseFloat(fxInput.value) > 0) ? parseFloat(fxInput.value) : 1280.0;
+  }
+
   openModal(bond) {
     this.selectedBondForModal = bond;
 
     document.getElementById('modal-bond-ticker').textContent = `${bond.ticker} - ${bond.issuer}`;
     document.getElementById('modal-bond-isin').textContent = `ISIN: ${bond.isin} • Ley ${bond.law} • Especie: ${bond.instrumentGroup} • Estructura: ${bond.structureType}${bond.isCallable ? ' (Callable)' : ''} • Rating: ${bond.rating} (${bond.ratingAgency})`;
 
-    document.getElementById('calc-clean-price').value = bond.cleanPrice;
-    document.getElementById('calc-accrued-interest').value = `$${bond.accruedInterest.toFixed(2)}`;
-    document.getElementById('calc-dirty-price').value = `$${bond.dirtyPrice.toFixed(2)}`;
+    this.refreshModalCurrencyView();
+
+    document.getElementById('bond-modal')?.classList.add('active');
+  }
+
+  refreshModalCurrencyView() {
+    const bond = this.selectedBondForModal;
+    if (!bond) return;
+
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
+    document.getElementById('lbl-clean-price').textContent = `Precio Limpio (${curr})`;
+    document.getElementById('lbl-accrued-interest').textContent = `Interés Corrido (${curr})`;
+    document.getElementById('lbl-dirty-price').textContent = `Precio Sucio (${curr})`;
+
+    const cleanVal = bond.cleanPrice * mult;
+    const dirtyVal = bond.dirtyPrice * mult;
+    const accruedVal = bond.accruedInterest * mult;
+
+    document.getElementById('calc-clean-price').value = cleanVal.toFixed(2);
+    document.getElementById('calc-accrued-interest').value = `${currSymbol}${accruedVal.toFixed(2)}`;
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${dirtyVal.toFixed(2)}`;
     document.getElementById('calc-result-tir').value = bond.tir.toFixed(2);
     document.getElementById('calc-result-parity').value = `${bond.parity.toFixed(1)}%`;
     document.getElementById('calc-result-duration').value = `${bond.duration.toFixed(2)} yrs`;
@@ -394,25 +531,30 @@ class TradingDeskApp {
           <td class="num-tabular">${this.formatDate(cf.date)}</td>
           <td class="num-tabular">${cf.amortization > 0 ? cf.amortization + '%' : '-'}</td>
           <td class="num-tabular">${cf.coupon.toFixed(3)}%</td>
-          <td class="num-tabular text-lime" style="font-weight: 700;">$${cf.amount.toFixed(3)}</td>
+          <td class="num-tabular text-lime" style="font-weight: 700;">${currSymbol}${(cf.amount * mult).toFixed(2)}</td>
           <td class="num-tabular text-muted">${cf.residual}%</td>
         </tr>
       `).join('');
     }
-
-    document.getElementById('bond-modal')?.classList.add('active');
   }
 
-  updateModalCalculatorFromCleanPrice(newCleanPrice) {
+  updateModalCalculatorFromCleanPrice(inputCleanPrice) {
     const bond = this.selectedBondForModal;
     if (!bond) return;
 
-    const dirtyPrice = newCleanPrice + bond.accruedInterest;
-    const parity = FinancialMath.calculateParity(dirtyPrice, bond.technicalValue);
-    const tir = FinancialMath.calculateTIR(dirtyPrice, bond.cashFlows, bond.settlementDate, bond.frequency);
-    const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPrice, bond.cashFlows, tir, bond.settlementDate, bond.frequency);
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const usdCleanPrice = (curr === 'ARS') ? (inputCleanPrice / fxRate) : inputCleanPrice;
 
-    document.getElementById('calc-dirty-price').value = `$${dirtyPrice.toFixed(2)}`;
+    const dirtyPriceUSD = usdCleanPrice + bond.accruedInterest;
+    const parity = FinancialMath.calculateParity(dirtyPriceUSD, bond.technicalValue);
+    const tir = FinancialMath.calculateTIR(dirtyPriceUSD, bond.cashFlows, bond.settlementDate, bond.frequency);
+    const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPriceUSD, bond.cashFlows, tir, bond.settlementDate, bond.frequency);
+
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${(dirtyPriceUSD * mult).toFixed(2)}`;
     document.getElementById('calc-result-parity').value = `${parity.toFixed(1)}%`;
     document.getElementById('calc-result-tir').value = tir.toFixed(2);
     document.getElementById('calc-result-duration').value = `${modifiedDuration.toFixed(2)} yrs`;
@@ -422,12 +564,17 @@ class TradingDeskApp {
     const bond = this.selectedBondForModal;
     if (!bond) return;
 
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
     const { cleanPrice, dirtyPrice } = FinancialMath.calculatePriceFromTIR(targetTIR, bond.cashFlows, bond.settlementDate, bond.accruedInterest, bond.frequency);
     const parity = FinancialMath.calculateParity(dirtyPrice, bond.technicalValue);
     const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPrice, bond.cashFlows, targetTIR, bond.settlementDate, bond.frequency);
 
-    document.getElementById('calc-clean-price').value = cleanPrice;
-    document.getElementById('calc-dirty-price').value = `$${dirtyPrice.toFixed(2)}`;
+    document.getElementById('calc-clean-price').value = (cleanPrice * mult).toFixed(2);
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${(dirtyPrice * mult).toFixed(2)}`;
     document.getElementById('calc-result-parity').value = `${parity.toFixed(1)}%`;
     document.getElementById('calc-result-duration').value = `${modifiedDuration.toFixed(2)} yrs`;
   }
