@@ -66,7 +66,28 @@ def migrate():
             except:
                 pass
                 
-            rating = row[17].strip() if len(row) > 17 else ""
+            raw_rating = row[17].strip() if len(row) > 17 else ""
+            
+            clean_rating = "S/C"
+            r_up = raw_rating.upper()
+            if "AAA" in r_up:
+                clean_rating = "AAA(arg)"
+            elif "AA-" in r_up or "AA -" in r_up:
+                clean_rating = "AA-(arg)"
+            elif "AA+" in r_up or "AA +" in r_up:
+                clean_rating = "AA+(arg)"
+            elif "AA" in r_up:
+                clean_rating = "AA(arg)"
+            elif "A-" in r_up or "A -" in r_up:
+                clean_rating = "A-(arg)"
+            elif "A+" in r_up or "A +" in r_up or "A1+" in r_up:
+                clean_rating = "A+(arg)"
+            elif "A" in r_up:
+                clean_rating = "A(arg)"
+            elif "BBB+" in r_up or "BBB +" in r_up:
+                clean_rating = "BBB+(arg)"
+            elif "BBB" in r_up or "BBB-" in r_up:
+                clean_rating = "BBB(arg)"
             
             bond = {
                 "id": f"bond_{ticker}",
@@ -74,7 +95,7 @@ def migrate():
                 "isin": isin,
                 "issuer": emisor,
                 "shortIssuer": emisor[:20], # truncated for now
-                "rating": rating,
+                "rating": clean_rating,
                 "type": "ON",
                 "instrumentGroup": instrument_group,
                 "currency": currency_code,
@@ -109,6 +130,16 @@ def migrate():
         out.write("export const BONDS_DATASET = ")
         json.dump(bonds, out, indent=2, ensure_ascii=False)
         out.write(";\n")
+        out.write("""
+export const RATINGS_LIST = ['Todos', 'AAA(arg)', 'AA+(arg)', 'AA(arg)', 'AA-(arg)', 'A+(arg)', 'A(arg)', 'A-(arg)', 'BBB+(arg)', 'BBB(arg)'];
+export const SECTORS_LIST = ['Todos', 'Energía & Petróleo', 'Bancos & Servicios Financieros', 'Telecomunicaciones', 'Real Estate', 'Consumo y Retail', 'Agropecuario', 'Industrial', 'Corporativo'];
+export const RATING_EQUIVALENCE_TABLE = [
+  { rating: "AAA", syp: "raAAA", fix: "AAA(arg)", moodys: "Aaa.ar", description: "Máxima calidad crediticia, riesgo mínimo." },
+  { rating: "AA", syp: "raAA", fix: "AA(arg)", moodys: "Aa.ar", description: "Muy alta calidad crediticia, muy bajo riesgo." },
+  { rating: "A", syp: "raA", fix: "A(arg)", moodys: "A.ar", description: "Alta calidad crediticia, bajo riesgo." },
+  { rating: "BBB", syp: "raBBB", fix: "BBB(arg)", moodys: "Baa.ar", description: "Calidad crediticia adecuada, riesgo moderado." }
+];
+""")
         
     print(f"Migrated {len(bonds)} bonds to {output_file}")
 
