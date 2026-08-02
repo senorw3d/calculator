@@ -571,3 +571,29 @@ body {
 .text-cyan { color: var(--accent-cyan); }
 .text-yellow { color: var(--accent-yellow); }
 .hidden { display: none !important; }
+
+/* Calculator Currency Selector */
+.btn-calc-curr {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-calc-curr:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.btn-calc-curr.active {
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  border-color: var(--accent-blue);
+  font-weight: 700;
+}

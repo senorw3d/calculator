@@ -6,8 +6,8 @@
 
 import { FinancialMath } from './financial-math.js';
 import { BONDS_DATASET, RATINGS_LIST, SECTORS_LIST, RATING_EQUIVALENCE_TABLE } from './data.js';
-
 import { MarketApiConnector } from './api.js';
+import { BymaCustodyApi } from './byma-api.js';
 
 class TradingDeskApp {
   constructor() {
@@ -30,8 +30,8 @@ class TradingDeskApp {
     this.curveSector = 'Todos';
     this.curveMaturity = 'Todos';
 
-
     this.apiConnector = new MarketApiConnector();
+    this.bymaApi = new BymaCustodyApi('homologacion');
     this.selectedBondForModal = null;
 
     this.init();
@@ -98,13 +98,20 @@ class TradingDeskApp {
     const freq = bond.frequency || 2;
     const intervalMonths = 12 / freq;
 
-    let startYear = 2024;
-    let startMonth = matMonth % 6;
-    if (startMonth === 0) startMonth = 6;
+    let startYear = 2025;
+    let startMonth = matMonth;
 
     const flowDates = [];
     let curY = startYear;
     let curM = startMonth;
+
+    while (curY > 2025 || (curY === 2025 && curM > 1)) {
+      curM -= intervalMonths;
+      if (curM <= 0) {
+        curM += 12;
+        curY -= 1;
+      }
+    }
 
     while (curY < matYear || (curY === matYear && curM <= matMonth)) {
       const formattedDate = `${curY}-${String(curM).padStart(2, '0')}-${String(matDay).padStart(2, '0')}`;
@@ -118,12 +125,9 @@ class TradingDeskApp {
       }
     }
 
-    if (flowDates.length === 0 || flowDates[flowDates.length - 1] !== bond.maturity) {
-      if (!flowDates.includes(bond.maturity)) {
-        flowDates.push(bond.maturity);
-      }
+    if (!flowDates.includes(bond.maturity)) {
+      flowDates.push(bond.maturity);
     }
-
     flowDates.sort();
 
     const n = flowDates.length;
@@ -132,20 +136,25 @@ class TradingDeskApp {
     const periodCouponPct = couponRate / freq;
     
     const isAmortizable = bond.structureType === 'Amortizable';
-    const amortCount = isAmortizable ? Math.min(3, n) : 1;
+    const amortYears = [matYear - 2, matYear - 1, matYear];
 
     const result = [];
     for (let i = 0; i < n; i++) {
       const dateStr = flowDates[i];
+      const parts = dateStr.split('-');
+      const y = parseInt(parts[0]);
+      const m = parseInt(parts[1]);
       const isLast = (i === n - 1);
       
       let amort = 0;
-      if (isAmortizable) {
-        if (i >= n - amortCount) {
-          amort = Number((100.0 / amortCount).toFixed(2));
+      if (isAmortizable && m === matMonth && amortYears.includes(y)) {
+        if (y === matYear) {
+          amort = residual;
+        } else {
+          amort = 33.33;
         }
-      } else {
-        if (isLast) amort = 100.0;
+      } else if (!isAmortizable && isLast) {
+        amort = 100.0;
       }
 
       if (isLast) {
@@ -305,8 +314,6 @@ class TradingDeskApp {
 
     // API Config Modal Triggers
     document.getElementById('btn-api-config')?.addEventListener('click', () => {
-      document.getElementById('api-provider-select').value = this.apiConnector.apiProvider;
-      document.getElementById('api-key-input').value = this.apiConnector.apiKey;
       document.getElementById('api-modal')?.classList.add('active');
     });
 
@@ -314,22 +321,131 @@ class TradingDeskApp {
       document.getElementById('api-modal')?.classList.remove('active');
     });
 
-    document.getElementById('btn-save-api')?.addEventListener('click', () => {
-      const provider = document.getElementById('api-provider-select').value;
-      const key = document.getElementById('api-key-input').value;
-      this.apiConnector.setCredentials(provider, key);
-      document.getElementById('api-modal')?.classList.remove('active');
-      this.updateMarketStatusBadge();
+    // BYMA Custody API - List Asset Classes
+    document.getElementById('btn-fetch-asset-classes')?.addEventListener('click', async () => {
+      const token = document.getElementById('api-key-input')?.value?.trim();
+      const env = document.getElementById('byma-env-select')?.value || 'homologacion';
+      const statusDiv = document.getElementById('byma-api-status');
+
+      if (!token) {
+        if (statusDiv) {
+          statusDiv.style.display = 'block';
+          statusDiv.style.color = 'var(--accent-red, #ff4d4d)';
+          statusDiv.textContent = '❌ Por favor ingresa el OAuth 2.0 Bearer Token para conectar a BYMA.';
+        }
+        return;
+      }
+
+      if (statusDiv) {
+        statusDiv.style.display = 'block';
+        statusDiv.style.color = 'var(--accent-cyan)';
+        statusDiv.textContent = `⏳ Consultando asset-classes en BYMA (${env})... (polling UUID si corresponde)`;
+      }
+
+      try {
+        this.bymaApi.setEnvironment(env);
+        const classes = await this.bymaApi.getAssetClasses(token);
+        if (statusDiv) {
+          statusDiv.style.color = 'var(--accent-lime)';
+          statusDiv.textContent = `✅ Éxito! Se obtuvieron ${classes.length} clases de activos desde BYMA (${env}).`;
+        }
+        console.log('[BYMA API Asset Classes]', classes);
+      } catch (err) {
+        if (statusDiv) {
+          statusDiv.style.color = 'var(--accent-red, #ff4d4d)';
+          statusDiv.textContent = `❌ Error consultando BYMA API: ${err.message}`;
+        }
+      }
+    });
+
+    // BYMA Custody API - Save & Sync Instruments
+    document.getElementById('btn-save-api')?.addEventListener('click', async () => {
+      const token = document.getElementById('api-key-input')?.value?.trim();
+      const env = document.getElementById('byma-env-select')?.value || 'homologacion';
+      const assetClass = document.getElementById('byma-asset-class')?.value || 'ACCIONES';
+      const cvsaId = document.getElementById('byma-cvsa-id')?.value || '';
+      const statusDiv = document.getElementById('byma-api-status');
+
+      if (!token) {
+        if (statusDiv) {
+          statusDiv.style.display = 'block';
+          statusDiv.style.color = 'var(--accent-red, #ff4d4d)';
+          statusDiv.textContent = '❌ Se requiere un Bearer Token válido para sincronizar con BYMA.';
+        }
+        return;
+      }
+
+      if (statusDiv) {
+        statusDiv.style.display = 'block';
+        statusDiv.style.color = 'var(--accent-cyan)';
+        statusDiv.textContent = `⏳ Sincronizando instrumentos estandarizados desde BYMA ${env}...`;
+      }
+
+      try {
+        this.bymaApi.setEnvironment(env);
+        const instruments = await this.bymaApi.getStandardInstruments(assetClass, cvsaId, token);
+
+        if (Array.isArray(instruments) && instruments.length > 0) {
+          const newBonds = instruments.map(item => this.bymaApi.transformToBondSchema(item));
+          
+          // Merge new BYMA instruments into existing bonds
+          newBonds.forEach(nb => {
+            const idx = this.bonds.findIndex(b => b.ticker === nb.ticker || b.id === nb.id);
+            if (idx >= 0) {
+              this.bonds[idx] = { ...this.bonds[idx], ...nb };
+            } else {
+              this.bonds.push(nb);
+            }
+          });
+
+          this.recalculateAllBonds();
+          this.requestDashboardUpdate();
+
+          if (statusDiv) {
+            statusDiv.style.color = 'var(--accent-lime)';
+            statusDiv.textContent = `✅ Conectado y Sincronizado! Se procesaron ${instruments.length} instrumentos desde BYMA.`;
+          }
+          setTimeout(() => {
+            document.getElementById('api-modal')?.classList.remove('active');
+          }, 1500);
+        } else {
+          if (statusDiv) {
+            statusDiv.style.color = 'var(--accent-yellow)';
+            statusDiv.textContent = `⚠️ La API de BYMA respondió correctamente pero no devolvió registros para la búsqueda.`;
+          }
+        }
+      } catch (err) {
+        if (statusDiv) {
+          statusDiv.style.color = 'var(--accent-red, #ff4d4d)';
+          statusDiv.textContent = `❌ Error al sincronizar con BYMA: ${err.message}`;
+        }
+      }
     });
 
     // Bond Detail Modal Close
     document.getElementById('modal-close-btn')?.addEventListener('click', () => {
       document.getElementById('bond-modal')?.classList.remove('active');
-    });
-
-    // Modal Real-Time Calculator Listeners
+    }    // Modal Real-Time Calculator Listeners
     const calcCleanInput = document.getElementById('calc-clean-price');
     const calcTirInput = document.getElementById('calc-result-tir');
+    const fxRateInput = document.getElementById('calc-fx-rate');
+
+    this.modalCurrency = 'MEP'; // Default 'MEP', 'CCL', 'ARS'
+
+    document.querySelectorAll('.btn-calc-curr').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.btn-calc-curr').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.modalCurrency = btn.dataset.curr;
+        this.refreshModalCurrencyView();
+      });
+    });
+
+    fxRateInput?.addEventListener('input', () => {
+      if (this.modalCurrency === 'ARS') {
+        this.refreshModalCurrencyView();
+      }
+    });
 
     calcCleanInput?.addEventListener('input', (e) => {
       const newCleanPrice = parseFloat(e.target.value);
@@ -371,8 +487,6 @@ class TradingDeskApp {
       return matchSearch && matchGroup && matchRating;
     });
   }
-
-
 
   updateDashboard() {
     const filteredBonds = this.getFilteredBonds();
@@ -461,15 +575,42 @@ class TradingDeskApp {
     this.requestDashboardUpdate();
   }
 
+  getFxRate() {
+    const fxInput = document.getElementById('calc-fx-rate');
+    return (fxInput && parseFloat(fxInput.value) > 0) ? parseFloat(fxInput.value) : 1280.0;
+  }
+
   openModal(bond) {
     this.selectedBondForModal = bond;
 
     document.getElementById('modal-bond-ticker').textContent = `${bond.ticker} - ${bond.issuer}`;
     document.getElementById('modal-bond-isin').textContent = `ISIN: ${bond.isin} • Ley ${bond.law} • Especie: ${bond.instrumentGroup} • Estructura: ${bond.structureType}${bond.isCallable ? ' (Callable)' : ''} • Rating: ${bond.rating} (${bond.ratingAgency})`;
 
-    document.getElementById('calc-clean-price').value = bond.cleanPrice;
-    document.getElementById('calc-accrued-interest').value = `$${bond.accruedInterest.toFixed(2)}`;
-    document.getElementById('calc-dirty-price').value = `$${bond.dirtyPrice.toFixed(2)}`;
+    this.refreshModalCurrencyView();
+
+    document.getElementById('bond-modal')?.classList.add('active');
+  }
+
+  refreshModalCurrencyView() {
+    const bond = this.selectedBondForModal;
+    if (!bond) return;
+
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
+    document.getElementById('lbl-clean-price').textContent = `Precio Limpio (${curr})`;
+    document.getElementById('lbl-accrued-interest').textContent = `Interés Corrido (${curr})`;
+    document.getElementById('lbl-dirty-price').textContent = `Precio Sucio (${curr})`;
+
+    const cleanVal = bond.cleanPrice * mult;
+    const dirtyVal = bond.dirtyPrice * mult;
+    const accruedVal = bond.accruedInterest * mult;
+
+    document.getElementById('calc-clean-price').value = cleanVal.toFixed(2);
+    document.getElementById('calc-accrued-interest').value = `${currSymbol}${accruedVal.toFixed(2)}`;
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${dirtyVal.toFixed(2)}`;
     document.getElementById('calc-result-tir').value = bond.tir.toFixed(2);
     document.getElementById('calc-result-parity').value = `${bond.parity.toFixed(1)}%`;
     document.getElementById('calc-result-duration').value = `${bond.duration.toFixed(2)} yrs`;
@@ -481,25 +622,30 @@ class TradingDeskApp {
           <td class="num-tabular">${this.formatDate(cf.date)}</td>
           <td class="num-tabular">${cf.amortization > 0 ? cf.amortization + '%' : '-'}</td>
           <td class="num-tabular">${cf.coupon.toFixed(3)}%</td>
-          <td class="num-tabular text-lime" style="font-weight: 700;">$${cf.amount.toFixed(3)}</td>
+          <td class="num-tabular text-lime" style="font-weight: 700;">${currSymbol}${(cf.amount * mult).toFixed(2)}</td>
           <td class="num-tabular text-muted">${cf.residual}%</td>
         </tr>
       `).join('');
     }
-
-    document.getElementById('bond-modal')?.classList.add('active');
   }
 
-  updateModalCalculatorFromCleanPrice(newCleanPrice) {
+  updateModalCalculatorFromCleanPrice(inputCleanPrice) {
     const bond = this.selectedBondForModal;
     if (!bond) return;
 
-    const dirtyPrice = newCleanPrice + bond.accruedInterest;
-    const parity = FinancialMath.calculateParity(dirtyPrice, bond.technicalValue);
-    const tir = FinancialMath.calculateTIR(dirtyPrice, bond.cashFlows, bond.settlementDate, bond.frequency);
-    const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPrice, bond.cashFlows, tir, bond.settlementDate, bond.frequency);
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const usdCleanPrice = (curr === 'ARS') ? (inputCleanPrice / fxRate) : inputCleanPrice;
 
-    document.getElementById('calc-dirty-price').value = `$${dirtyPrice.toFixed(2)}`;
+    const dirtyPriceUSD = usdCleanPrice + bond.accruedInterest;
+    const parity = FinancialMath.calculateParity(dirtyPriceUSD, bond.technicalValue);
+    const tir = FinancialMath.calculateTIR(dirtyPriceUSD, bond.cashFlows, bond.settlementDate, bond.frequency);
+    const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPriceUSD, bond.cashFlows, tir, bond.settlementDate, bond.frequency);
+
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${(dirtyPriceUSD * mult).toFixed(2)}`;
     document.getElementById('calc-result-parity').value = `${parity.toFixed(1)}%`;
     document.getElementById('calc-result-tir').value = tir.toFixed(2);
     document.getElementById('calc-result-duration').value = `${modifiedDuration.toFixed(2)} yrs`;
@@ -509,12 +655,17 @@ class TradingDeskApp {
     const bond = this.selectedBondForModal;
     if (!bond) return;
 
+    const curr = this.modalCurrency || 'MEP';
+    const fxRate = this.getFxRate();
+    const mult = (curr === 'ARS') ? fxRate : 1.0;
+    const currSymbol = (curr === 'ARS') ? 'ARS $' : '$';
+
     const { cleanPrice, dirtyPrice } = FinancialMath.calculatePriceFromTIR(targetTIR, bond.cashFlows, bond.settlementDate, bond.accruedInterest, bond.frequency);
     const parity = FinancialMath.calculateParity(dirtyPrice, bond.technicalValue);
     const { modifiedDuration } = FinancialMath.calculateRiskMetrics(dirtyPrice, bond.cashFlows, targetTIR, bond.settlementDate, bond.frequency);
 
-    document.getElementById('calc-clean-price').value = cleanPrice;
-    document.getElementById('calc-dirty-price').value = `$${dirtyPrice.toFixed(2)}`;
+    document.getElementById('calc-clean-price').value = (cleanPrice * mult).toFixed(2);
+    document.getElementById('calc-dirty-price').value = `${currSymbol}${(dirtyPrice * mult).toFixed(2)}`;
     document.getElementById('calc-result-parity').value = `${parity.toFixed(1)}%`;
     document.getElementById('calc-result-duration').value = `${modifiedDuration.toFixed(2)} yrs`;
   }

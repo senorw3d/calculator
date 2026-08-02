@@ -137,32 +137,47 @@
   </div>
 
   <!-- API BYMA/MAE CONFIGURATION MODAL -->
+  <!-- API CONFIGURATION MODAL DIALOG -->
   <div id="api-modal" class="modal-overlay">
-    <div class="modal-content" style="max-width: 550px;">
+    <div class="modal-content" style="max-width: 580px;">
       <div class="modal-header">
-        <h2 class="serif-heading text-lime" style="font-size: 1.3rem;">⚙ Configuración API BYMA / MAE / Broker</h2>
+        <h2 class="serif-heading text-lime" style="font-size: 1.3rem;">⚙ Homologación API BYMA (Custody Instruments v1)</h2>
         <button id="api-modal-close" class="modal-close">&times;</button>
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
         <div class="calc-field">
-          <label>Proveedor de Feed de Datos</label>
-          <select id="api-provider-select" class="select-control" style="width: 100%;">
-            <option value="public">API Pública Mercado (DolarApi / OpenBolsa BYMA)</option>
-            <option value="byma">BYMA DataFeed Directo (Oficial BYMA)</option>
-            <option value="ppi">Portafolio Personal Inversiones (PPI API)</option>
-            <option value="iol">InvertirOnline (IOL API)</option>
+          <label>Entorno API BYMA</label>
+          <select id="byma-env-select" class="select-control" style="width: 100%;">
+            <option value="homologacion">Homologación (https://hs-api.byma.com.ar)</option>
+            <option value="produccion">Producción (https://api.byma.com.ar)</option>
           </select>
         </div>
 
         <div class="calc-field">
-          <label>Token de API / API Key (Opcional para Feed Privado)</label>
-          <input type="password" id="api-key-input" placeholder="Pegar token de API institucional o de broker...">
+          <label>OAuth 2.0 Bearer Token (Authorization: Bearer {{access_token}})</label>
+          <input type="password" id="api-key-input" placeholder="eyJraWQiOiJwM1E0dEpVd0NQOG4zNllRd..." style="width: 100%; font-family: var(--font-mono); font-size: 0.8rem;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+          <div class="calc-field">
+            <label>Asset Class Filter</label>
+            <input type="text" id="byma-asset-class" value="ACCIONES" placeholder="ej: ACCIONES, OBLIGACION NEGOCIABLE">
+          </div>
+          <div class="calc-field">
+            <label>CVSA Identifier (Opcional)</label>
+            <input type="text" id="byma-cvsa-id" placeholder="ej: 109, ACPY080800514">
+          </div>
+        </div>
+
+        <div id="byma-api-status" style="font-size: 0.8rem; padding: 8px 12px; border-radius: 6px; background: var(--bg-card-hover); display: none;">
+          <!-- Status text -->
         </div>
       </div>
 
-      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
-        <button id="btn-save-api" class="btn-action">Guardar & Conectar Feed</button>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+        <button id="btn-fetch-asset-classes" class="btn-action" style="background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main); font-size: 0.75rem;">📋 Listar Clases Activos</button>
+        <button id="btn-save-api" class="btn-action">🔗 Conectar API BYMA Homologación</button>
       </div>
     </div>
   </div>
@@ -179,18 +194,34 @@
       </div>
 
       <!-- Financial Metrics & Interactive Calculator -->
-      <h3 class="serif-heading text-cyan" style="font-size: 1.1rem; margin-bottom: 0.75rem;">Calculadora de Renta Fija en Tiempo Real</h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h3 class="serif-heading text-cyan" style="font-size: 1.1rem; margin: 0;">Calculadora de Renta Fija en Tiempo Real</h3>
+        <div class="calc-currency-selector" style="display: flex; gap: 0.4rem; align-items: center;">
+          <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-dim);">Moneda de Cálculo:</span>
+          <button type="button" class="btn-calc-curr active" data-curr="MEP">Dólar MEP</button>
+          <button type="button" class="btn-calc-curr" data-curr="CCL">Dólar Cable (CCL)</button>
+          <button type="button" class="btn-calc-curr" data-curr="ARS">Pesos (ARS)</button>
+        </div>
+      </div>
+
+      <!-- FX Rate Bar -->
+      <div id="fx-rate-container" style="display: flex; gap: 0.75rem; margin-bottom: 0.75rem; align-items: center; background: var(--bg-card-hover); padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+        <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Tipo de Cambio Implícito (TC):</label>
+        <input type="number" id="calc-fx-rate" class="num-tabular" value="1280.00" style="width: 110px; padding: 4px 8px; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        <span style="font-size: 0.75rem; color: var(--text-dim);">(ARS / USD)</span>
+      </div>
+
       <div class="calc-grid">
         <div class="calc-field">
-          <label>Precio Limpio (Clean Price)</label>
+          <label id="lbl-clean-price">Precio Limpio (Clean Price)</label>
           <input type="number" id="calc-clean-price" class="num-tabular" step="0.1" value="100.0">
         </div>
         <div class="calc-field">
-          <label>Interés Corrido (IC)</label>
+          <label id="lbl-accrued-interest">Interés Corrido (IC)</label>
           <input type="text" id="calc-accrued-interest" class="num-tabular" readonly value="0.00">
         </div>
         <div class="calc-field">
-          <label>Precio Sucio (Dirty Price)</label>
+          <label id="lbl-dirty-price">Precio Sucio (Dirty Price)</label>
           <input type="text" id="calc-dirty-price" class="num-tabular" readonly value="0.00">
         </div>
         <div class="calc-field">
