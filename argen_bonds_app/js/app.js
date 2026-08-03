@@ -569,24 +569,47 @@ class TradingDeskApp {
     let list = this.calculatedBonds;
 
     // Filter by selected Group tab first
-    if (this.selectedGroup === 'USD MEP' || this.selectedGroup === 'USD Cable') {
-      const suffix = this.selectedGroup === 'USD MEP' ? 'D' : 'C';
-      list = list.filter(b => b.currency === 'USD' || b.instrumentGroup === 'USD MEP' || b.instrumentGroup === 'USD Cable')
+    if (this.selectedGroup === 'USD MEP') {
+      // Hard dollar, local law -> Dólar MEP (dollars in the country)
+      list = list.filter(b => b.currency === 'USD' && (b.law === 'Argentina' || b.law === 'Domestic') && !b.ticker.endsWith('P') && !b.ticker.endsWith('L') && !b.ticker.includes('RZB'))
                  .map(b => {
                    let newTicker = b.ticker;
                    if (newTicker.endsWith('O')) {
-                     newTicker = newTicker.slice(0, -1) + suffix;
-                   } else if (!newTicker.endsWith(suffix)) {
-                     newTicker = newTicker + suffix;
+                     newTicker = newTicker.slice(0, -1) + 'D';
+                   } else if (!newTicker.endsWith('D')) {
+                     newTicker = newTicker + 'D';
                    }
                    return {
                      ...b,
                      ticker: newTicker,
-                     instrumentGroup: this.selectedGroup
+                     instrumentGroup: 'USD MEP'
+                   };
+                 });
+    } else if (this.selectedGroup === 'USD Cable') {
+      // Hard dollar, foreign law -> Dólar Cable (dollars outside the country)
+      list = list.filter(b => b.currency === 'USD' && (b.law === 'Extranjera' || b.law === 'Extranjera / Nueva York' || b.law === 'Seleccione Ley Aplicable' || b.law === 'New York'))
+                 .map(b => {
+                   let newTicker = b.ticker;
+                   if (newTicker.endsWith('O')) {
+                     newTicker = newTicker.slice(0, -1) + 'C';
+                   } else if (!newTicker.endsWith('C')) {
+                     newTicker = newTicker + 'C';
+                   }
+                   return {
+                     ...b,
+                     ticker: newTicker,
+                     instrumentGroup: 'USD Cable'
                    };
                  });
     } else if (this.selectedGroup === 'Dólar Linked') {
-      list = list.filter(b => b.instrumentGroup === 'Dolar Linked');
+      // Denominated in USD, paid in ARS (Pesos) -> Dólar Linked
+      list = list.filter(b => b.currency === 'USD' && (b.ticker.endsWith('P') || b.ticker.endsWith('L') || b.ticker.includes('RZB') || b.instrumentGroup === 'Dolar Linked'))
+                 .map(b => {
+                   return {
+                     ...b,
+                     instrumentGroup: 'Dólar Linked'
+                   };
+                 });
     } else if (this.selectedGroup.startsWith('Pesos')) {
       // Group: Pesos BADLAR, Pesos TAMAR, Pesos Fijos
       list = list.filter(b => b.currency === 'ARS' || b.instrumentGroup.startsWith('Pesos'))
