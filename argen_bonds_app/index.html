@@ -69,6 +69,21 @@
       </div>
     </section>
 
+    <!-- VIEW 0: YIELD CURVE CHART -->
+    <section id="view-chart-container" class="view-panel" style="margin-bottom: 1.5rem;">
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <h3 class="serif-heading" style="font-size: 1.1rem; color: var(--accent-lime); text-transform: uppercase; letter-spacing: 1px; margin: 0;">
+            Curva de Rendimiento TIR (TIR % vs Duration)
+          </h3>
+          <span style="font-size: 0.75rem; color: var(--text-dim);">Haz clic en un punto para abrir la calculadora de ese bono</span>
+        </div>
+        <div style="position: relative; height: 280px; width: 100%;">
+          <canvas id="yieldCurveCanvas"></canvas>
+        </div>
+      </div>
+    </section>
+
     <!-- VIEW 1: BONDS TABLE -->
     <section id="view-table" class="view-panel">
       <div class="table-container">

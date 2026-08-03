@@ -8,10 +8,53 @@ import { FinancialMath } from './financial-math.js?v=1.0.1';
 import { BONDS_DATASET, RATINGS_LIST, SECTORS_LIST, RATING_EQUIVALENCE_TABLE } from './data.js?v=1.0.1';
 import { MarketApiConnector } from './api.js?v=1.0.1';
 import { BymaCustodyApi } from './byma-api.js?v=1.0.1';
+import { YieldCurveChart } from './curve-chart.js?v=1.0.1';
 
 class TradingDeskApp {
   constructor() {
     this.bonds = JSON.parse(JSON.stringify(BONDS_DATASET));
+    
+    // Simulate realistic starting clean prices based on duration to generate a professional yield curve
+    const today = new Date();
+    this.bonds.forEach((bond, index) => {
+      if (bond.currency === 'USD' || bond.instrumentGroup === 'USD MEP') {
+        const matDate = new Date(bond.maturity);
+        const diffTime = Math.max(0, matDate - today);
+        const years = diffTime / (1000 * 60 * 60 * 24 * 365.25);
+        
+        // Curve slope logic: longer term = lower price / higher yield
+        let price = 96.0 - (years * 2.2);
+        
+        // Adjust for rating credit spread (AAA is more expensive / lower yield)
+        if (bond.rating.includes('AAA')) price += 5.0;
+        else if (bond.rating.includes('AA+')) price += 3.5;
+        else if (bond.rating.includes('AA')) price += 2.0;
+        else if (bond.rating.includes('A+')) price += 1.0;
+        else if (bond.rating.includes('A')) price += 0.0;
+        else if (bond.rating === 'S/C') price -= 4.0;
+        
+        // Add random scatter noise
+        const seed = index * 12345;
+        const noise = Math.sin(seed) * 2.0;
+        
+        bond.cleanPrice = Math.max(40, Math.min(115, Number((price + noise).toFixed(2))));
+      } else if (bond.currency === 'ARS') {
+        // Peso bonds pricing simulation
+        const matDate = new Date(bond.maturity);
+        const diffTime = Math.max(0, matDate - today);
+        const years = diffTime / (1000 * 60 * 60 * 24 * 365.25);
+        
+        let price = 92.0 - (years * 3.5);
+        
+        if (bond.rating.includes('AAA')) price += 4.0;
+        else if (bond.rating === 'S/C') price -= 5.0;
+        
+        const seed = index * 54321;
+        const noise = Math.sin(seed) * 3.0;
+        bond.cleanPrice = Math.max(30, Math.min(110, Number((price + noise).toFixed(2))));
+      }
+    });
+
     this.calculatedBonds = [];
     this.settlementMode = 'T+1';
 
@@ -34,15 +77,35 @@ class TradingDeskApp {
     this.bymaApi = new BymaCustodyApi('homologacion');
     this.selectedBondForModal = null;
 
+    // Initialize column order and widths
+    this.columnOrder = this.loadColumnOrder() || ['fav', 'ticker', 'issuer', 'type', 'clause', 'callable', 'rating', 'law', 'maturity', 'tir', 'duration', 'parity', 'price'];
+    this.columnWidths = this.loadColumnWidths() || {};
+    this.columns = [
+      { id: 'fav', label: '★', render: (b, isFav) => `<td style="text-align: center;"><button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); window.app.toggleFavorite('${b.id}')">${isFav ? '★' : '☆'}</button></td>` },
+      { id: 'ticker', label: 'Ticker / ISIN', render: (b) => `<td><div style="font-weight: 700; color: var(--accent-lime);">${b.ticker}</div><div style="font-size: 0.7rem; color: var(--text-dim);">${b.isin}</div></td>` },
+      { id: 'issuer', label: 'Emisor', render: (b) => `<td><div style="font-weight: 600;">${b.shortIssuer}</div><div style="font-size: 0.7rem; color: var(--text-muted);">${b.sector}</div></td>` },
+      { id: 'type', label: 'Tipo Especie', render: (b) => `<td><span class="badge badge-sector">${b.instrumentGroup}</span></td>` },
+      { id: 'clause', label: 'Estructura / Cláusula', render: (b) => `<td><span class="badge badge-law">${b.structureType}</span></td>` },
+      { id: 'callable', label: 'Callable', render: (b) => `<td style="text-align: center; font-weight: 700; color: ${b.isCallable ? 'var(--accent-cyan)' : 'var(--text-muted)'};">${b.isCallable ? 'Sí' : 'No'}</td>` },
+      { id: 'rating', label: 'Rating & Calificadora', render: (b) => `<td><span class="badge badge-rating">${b.rating}</span><div style="font-size: 0.65rem; color: var(--text-dim); margin-top: 2px;">${b.ratingAgency || 'FIX'}</div></td>` },
+      { id: 'law', label: 'Ley', render: (b) => `<td><span class="badge ${b.law === 'Nueva York' ? 'badge-law' : 'badge-sector'}">${b.law}</span></td>` },
+      { id: 'maturity', label: 'Vencimiento', render: (b) => `<td class="num-tabular">${this.formatDate(b.maturity)}</td>` },
+      { id: 'tir', label: 'TIR (%)', render: (b) => `<td class="num-tabular text-lime" style="font-weight: 700;">${b.tir.toFixed(2)}%</td>` },
+      { id: 'duration', label: 'Duration (MD)', render: (b) => `<td class="num-tabular">${b.duration.toFixed(2)} yrs</td>` },
+      { id: 'parity', label: 'Paridad (%)', render: (b) => `<td class="num-tabular text-cyan" style="font-weight: 700; font-size: 1.05em;">${b.parity.toFixed(1)}%</td>` },
+      { id: 'price', label: 'Último Precio', render: (b) => `<td class="num-tabular" style="font-weight: 700; font-size: 1.05em;"><div>$${b.cleanPrice.toFixed(2)}</div><div style="font-size: 0.7rem; color: var(--text-muted); font-weight: 400;">$${b.dirtyPrice.toFixed(2)} dirty</div></td>` }
+    ];
+
+    // Instantiate Yield Curve Chart
+    this.yieldCurve = new YieldCurveChart('yieldCurveCanvas');
+
     this.init();
   }
 
   loadFavorites() {
     try {
       const saved = localStorage.getItem('argen_bonds_watchlist');
-      const parsed = saved ? JSON.parse(saved) : null;
-      if (Array.isArray(parsed)) return parsed;
-      return ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
+      return saved ? JSON.parse(saved) : ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
     } catch (e) {
       return ['bond_ym34d', 'bond_ymcid', 'bond_tlcmd', 'bond_ircpd'];
     }
@@ -56,6 +119,28 @@ class TradingDeskApp {
     }
   }
 
+  loadColumnOrder() {
+    try {
+      const saved = localStorage.getItem('argen_bonds_column_order');
+      return saved ? JSON.parse(saved) : null;
+    } catch(e) { return null; }
+  }
+
+  saveColumnOrder() {
+    localStorage.setItem('argen_bonds_column_order', JSON.stringify(this.columnOrder));
+  }
+
+  loadColumnWidths() {
+    try {
+      const saved = localStorage.getItem('argen_bonds_column_widths');
+      return saved ? JSON.parse(saved) : null;
+    } catch(e) { return null; }
+  }
+
+  saveColumnWidths() {
+    localStorage.setItem('argen_bonds_column_widths', JSON.stringify(this.columnWidths));
+  }
+
   init() {
     const savedTheme = localStorage.getItem('argen_bonds_theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -64,6 +149,7 @@ class TradingDeskApp {
     this.setupEventListeners();
     this.updateMarketStatusBadge();
     this.renderRatingEquivalenceTable();
+    this.renderBondsHeader();
     this.requestDashboardUpdate();
     this.startLiveTicksSimulation();
   }
@@ -473,27 +559,193 @@ class TradingDeskApp {
   }
 
   getFilteredBonds() {
-    return this.calculatedBonds.filter(b => {
+    let list = this.calculatedBonds;
+
+    // Filter by selected Group tab first
+    if (this.selectedGroup === 'USD MEP' || this.selectedGroup === 'USD Cable') {
+      const suffix = this.selectedGroup === 'USD MEP' ? 'D' : 'C';
+      list = list.filter(b => b.currency === 'USD' || b.instrumentGroup === 'USD MEP' || b.instrumentGroup === 'USD Cable')
+                 .map(b => {
+                   let newTicker = b.ticker;
+                   if (newTicker.endsWith('O')) {
+                     newTicker = newTicker.slice(0, -1) + suffix;
+                   } else if (!newTicker.endsWith(suffix)) {
+                     newTicker = newTicker + suffix;
+                   }
+                   return {
+                     ...b,
+                     ticker: newTicker,
+                     instrumentGroup: this.selectedGroup
+                   };
+                 });
+    } else if (this.selectedGroup === 'Dólar Linked') {
+      list = list.filter(b => b.instrumentGroup === 'Dolar Linked');
+    } else if (this.selectedGroup.startsWith('Pesos')) {
+      // Group: Pesos BADLAR, Pesos TAMAR, Pesos Fijos
+      list = list.filter(b => b.currency === 'ARS' || b.instrumentGroup.startsWith('Pesos'))
+                 .map(b => {
+                   // Classify dynamically based on ticker structure or issuer to populate tabs
+                   let group = 'Pesos Fijos';
+                   const t = b.ticker.toLowerCase();
+                   if (t.endsWith('o') || b.issuer.toLowerCase().includes('rombo') || b.issuer.toLowerCase().includes('toyota') || b.issuer.toLowerCase().includes('bbva') || b.issuer.toLowerCase().includes('santander')) {
+                     group = 'Pesos BADLAR';
+                   } else if (t.endsWith('v')) {
+                     group = 'Pesos TAMAR';
+                   }
+                   return {
+                     ...b,
+                     instrumentGroup: group
+                   };
+                 })
+                 .filter(b => b.instrumentGroup === this.selectedGroup);
+    } else if (this.selectedGroup === 'Favoritos') {
+      list = list.filter(b => Array.isArray(this.favorites) && this.favorites.includes(b.id));
+    }
+
+    // Now filter by search query and rating
+    return list.filter(b => {
       const matchSearch = !this.searchQuery ||
         b.ticker.toLowerCase().includes(this.searchQuery) ||
         b.isin.toLowerCase().includes(this.searchQuery) ||
         b.issuer.toLowerCase().includes(this.searchQuery);
 
-      let matchGroup = true;
-      if (this.selectedGroup === 'Favoritos') {
-        matchGroup = Array.isArray(this.favorites) && this.favorites.includes(b.id);
-      } else if (this.selectedGroup !== 'Todos') {
-        matchGroup = b.instrumentGroup === this.selectedGroup;
-      }
       const matchRating = this.selectedRating === 'Todos' || b.rating === this.selectedRating;
 
-      return matchSearch && matchGroup && matchRating;
+      return matchSearch && matchRating;
     });
   }
 
   updateDashboard() {
     const filteredBonds = this.getFilteredBonds();
     this.renderBondsTable(filteredBonds);
+    
+    // Render the yield curve chart with the filtered bonds list
+    if (this.yieldCurve) {
+      this.yieldCurve.render(filteredBonds, (bond) => {
+        this.openModal(bond);
+      });
+    }
+  }
+
+  renderBondsHeader() {
+    const thead = document.querySelector('.bonds-table thead');
+    if (!thead) return;
+
+    thead.innerHTML = `
+      <tr>
+        ${this.columnOrder.map((colId, index) => {
+          const col = this.columns.find(c => c.id === colId);
+          if (!col) return '';
+          const draggable = colId !== 'fav' ? 'draggable="true"' : '';
+          const widthStyle = this.columnWidths[colId] ? `style="width: ${this.columnWidths[colId]}px; min-width: ${this.columnWidths[colId]}px;"` : '';
+          return `
+            <th id="th-${colId}" data-col="${colId}" data-index="${index}" ${draggable} ${widthStyle} class="${colId === 'fav' ? 'fav-th' : ''}">
+              <div class="th-content">
+                <span class="th-label">${col.label}</span>
+                ${colId !== 'fav' ? '<span class="drag-indicator">⋮⋮</span>' : ''}
+              </div>
+              ${colId !== 'fav' ? '<div class="resize-handle"></div>' : ''}
+            </th>
+          `;
+        }).join('')}
+      </tr>
+    `;
+
+    this.setupHeaderEvents();
+  }
+
+  setupHeaderEvents() {
+    const headers = document.querySelectorAll('.bonds-table th');
+    
+    // 1. Resizing logic
+    headers.forEach(th => {
+      const handle = th.querySelector('.resize-handle');
+      if (!handle) return;
+
+      handle.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const colId = th.dataset.col;
+        const startX = e.pageX;
+        const startWidth = th.offsetWidth;
+        
+        handle.classList.add('resizing');
+        
+        const onMouseMove = (moveEvt) => {
+          const newWidth = Math.max(50, startWidth + (moveEvt.pageX - startX));
+          th.style.width = `${newWidth}px`;
+          th.style.minWidth = `${newWidth}px`;
+          this.columnWidths[colId] = newWidth;
+        };
+        
+        const onMouseUp = () => {
+          handle.classList.remove('resizing');
+          this.saveColumnWidths();
+          window.removeEventListener('mousemove', onMouseMove);
+          window.removeEventListener('mouseup', onMouseUp);
+        };
+        
+        window.addEventListener('mousemove', onMouseMove);
+        window.addEventListener('mouseup', onMouseUp);
+      });
+    });
+
+    // 2. Drag & Drop logic for reordering
+    let draggedColId = null;
+
+    headers.forEach(th => {
+      if (th.getAttribute('draggable') !== 'true') return;
+
+      th.addEventListener('dragstart', (e) => {
+        draggedColId = th.dataset.col;
+        th.classList.add('dragging');
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', draggedColId);
+      });
+
+      th.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        const targetTh = e.target.closest('th');
+        if (targetTh && targetTh.dataset.col !== draggedColId && targetTh.dataset.col !== 'fav') {
+          targetTh.classList.add('drag-over');
+        }
+      });
+
+      th.addEventListener('dragleave', (e) => {
+        const targetTh = e.target.closest('th');
+        if (targetTh) {
+          targetTh.classList.remove('drag-over');
+        }
+      });
+
+      th.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const targetTh = e.target.closest('th');
+        if (targetTh) {
+          targetTh.classList.remove('drag-over');
+          const targetColId = targetTh.dataset.col;
+          
+          if (draggedColId && targetColId && draggedColId !== targetColId && targetColId !== 'fav') {
+            const dragIdx = this.columnOrder.indexOf(draggedColId);
+            const targetIdx = this.columnOrder.indexOf(targetColId);
+            
+            // Reorder in columnOrder array
+            this.columnOrder.splice(dragIdx, 1);
+            this.columnOrder.splice(targetIdx, 0, draggedColId);
+            
+            this.saveColumnOrder();
+            this.renderBondsHeader();
+            this.requestDashboardUpdate();
+          }
+        }
+      });
+
+      th.addEventListener('dragend', () => {
+        th.classList.remove('dragging');
+        headers.forEach(h => h.classList.remove('drag-over'));
+      });
+    });
   }
 
   renderBondsTable(bondsList) {
@@ -501,51 +753,22 @@ class TradingDeskApp {
     if (!tbody) return;
 
     if (bondsList.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="12" style="text-align: center; color: var(--text-dim); padding: 2rem;">No se encontraron especies con los filtros seleccionados</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="${this.columnOrder.length}" style="text-align: center; color: var(--text-dim); padding: 2rem;">No se encontraron especies con los filtros seleccionados</td></tr>`;
       return;
     }
 
     tbody.innerHTML = bondsList.map(b => {
       const isFav = this.favorites.includes(b.id);
+      
+      const cellsHtml = this.columnOrder.map(colId => {
+        const col = this.columns.find(c => c.id === colId);
+        if (!col) return '';
+        return col.render(b, isFav);
+      }).join('');
+
       return `
         <tr id="row-${b.id}" data-id="${b.id}">
-          <td style="text-align: center;">
-            <button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); window.app.toggleFavorite('${b.id}')">
-              ${isFav ? '★' : '☆'}
-            </button>
-          </td>
-          <td>
-            <div style="font-weight: 700; color: var(--accent-lime);">${b.ticker}</div>
-            <div style="font-size: 0.7rem; color: var(--text-dim);">${b.isin}</div>
-          </td>
-          <td>
-            <div style="font-weight: 600;">${b.shortIssuer}</div>
-            <div style="font-size: 0.7rem; color: var(--text-muted);">${b.sector}</div>
-          </td>
-          <td>
-            <span class="badge badge-sector">${b.instrumentGroup}</span>
-          </td>
-          <td>
-            <span class="badge badge-law">${b.structureType}</span>
-          </td>
-          <td style="text-align: center; font-weight: 700; color: ${b.isCallable ? 'var(--accent-cyan)' : 'var(--text-muted)'};">
-            ${b.isCallable ? 'Sí' : 'No'}
-          </td>
-          <td>
-            <span class="badge badge-rating">${b.rating}</span>
-            <div style="font-size: 0.65rem; color: var(--text-dim); margin-top: 2px;">${b.ratingAgency || 'FIX'}</div>
-          </td>
-          <td>
-            <span class="badge ${b.law === 'Nueva York' ? 'badge-law' : 'badge-sector'}">${b.law}</span>
-          </td>
-          <td class="num-tabular">${this.formatDate(b.maturity)}</td>
-          <td class="num-tabular text-lime" style="font-weight: 700;">${b.tir.toFixed(2)}%</td>
-          <td class="num-tabular">${b.duration.toFixed(2)} yrs</td>
-          <td class="num-tabular text-cyan" style="font-weight: 700; font-size: 1.05em;">${b.parity.toFixed(1)}%</td>
-          <td class="num-tabular" style="font-weight: 700; font-size: 1.05em;">
-            <div>$${b.cleanPrice.toFixed(2)}</div>
-            <div style="font-size: 0.7rem; color: var(--text-muted); font-weight: 400;">$${b.dirtyPrice.toFixed(2)} dirty</div>
-          </td>
+          ${cellsHtml}
         </tr>
       `;
     }).join('');

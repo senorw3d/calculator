@@ -396,6 +396,7 @@ body {
   border-bottom: 2px solid var(--border-color);
   white-space: nowrap;
   user-select: none;
+  position: relative;
 }
 
 .bonds-table td {
@@ -597,3 +598,77 @@ body {
   border-color: var(--accent-blue);
   font-weight: 700;
 }
+
+/* Interactive Resizable Columns */
+.resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 10;
+  transition: background-color 0.15s;
+}
+.resize-handle:hover,
+.resize-handle.resizing {
+  background-color: var(--accent-lime);
+}
+
+/* Interactive Drag & Drop Reordering */
+.th-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+}
+.th-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.drag-indicator {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: grab;
+  user-select: none;
+  font-weight: bold;
+}
+th[draggable="true"] {
+  cursor: grab;
+}
+th[draggable="true"]:hover .drag-indicator {
+  opacity: 0.6;
+}
+th.dragging {
+  opacity: 0.4;
+  background-color: var(--bg-card-hover) !important;
+}
+th.drag-over {
+  border-left: 2px dashed var(--accent-lime) !important;
+}
+
+/* Price flashing for ticks simulation */
+.price-flash {
+  animation: flash-row 0.8s ease;
+}
+@keyframes flash-row {
+  0% { background-color: rgba(254, 225, 43, 0.1); }
+  100% { background-color: transparent; }
+}
+
+/* Premium Yield Curve Panel */
+.curve-chart-panel {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease;
+}
+.curve-chart-panel:hover {
+  border-color: var(--accent-lime);
+}
+
