@@ -96,7 +96,7 @@ body {
 }
 
 .header-container {
-  max-width: 1400px;
+  max-width: 96%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -196,7 +196,7 @@ body {
 
 /* Main Dashboard Container */
 .main-container {
-  max-width: 1400px;
+  max-width: 96%;
   margin: 0 auto;
   padding: 1.5rem;
 }
