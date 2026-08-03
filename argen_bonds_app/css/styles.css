@@ -403,6 +403,8 @@ body {
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--border-color);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bonds-table tbody tr {
@@ -670,5 +672,11 @@ th.drag-over {
 }
 .curve-chart-panel:hover {
   border-color: var(--accent-lime);
+}
+
+/* Active sorting column header highlights */
+th.sorted-th {
+  color: var(--accent-lime) !important;
+  background-color: var(--bg-card-hover) !important;
 }
 

@@ -77,6 +77,11 @@ class TradingDeskApp {
     this.bymaApi = new BymaCustodyApi('homologacion');
     this.selectedBondForModal = null;
 
+    // Sorting state
+    this.sortCol = null;
+    this.sortDir = null; // 'desc', 'asc', or null
+    this.isDragging = false;
+
     // Initialize column order and widths
     this.columnOrder = this.loadColumnOrder() || ['fav', 'ticker', 'issuer', 'type', 'clause', 'callable', 'rating', 'law', 'maturity', 'tir', 'duration', 'parity', 'price'];
     this.columnWidths = this.loadColumnWidths() || {};
@@ -633,7 +638,7 @@ class TradingDeskApp {
     }
 
     // Now filter by search query and rating
-    return list.filter(b => {
+    const filtered = list.filter(b => {
       const matchSearch = !this.searchQuery ||
         b.ticker.toLowerCase().includes(this.searchQuery) ||
         b.isin.toLowerCase().includes(this.searchQuery) ||
@@ -643,6 +648,95 @@ class TradingDeskApp {
 
       return matchSearch && matchRating;
     });
+
+    return this.sortBonds(filtered);
+  }
+
+  sortBonds(list) {
+    if (!this.sortCol || !this.sortDir) {
+      // Default: maturity date ascending (shortest first)
+      return [...list].sort((a, b) => this.defaultSort(a, b));
+    }
+    
+    return [...list].sort((a, b) => {
+      const valA = this.getSortValue(a, this.sortCol);
+      const valB = this.getSortValue(b, this.sortCol);
+      
+      let comp = 0;
+      if (typeof valA === 'string' && typeof valB === 'string') {
+        comp = valA.localeCompare(valB);
+      } else {
+        comp = (valA || 0) - (valB || 0);
+      }
+      
+      return this.sortDir === 'desc' ? -comp : comp;
+    });
+  }
+
+  defaultSort(a, b) {
+    const timeA = new Date(a.maturity).getTime() || Infinity;
+    const timeB = new Date(b.maturity).getTime() || Infinity;
+    return timeA - timeB;
+  }
+
+  getSortValue(b, colId) {
+    switch (colId) {
+      case 'fav':
+        return this.favorites.includes(b.id) ? 1 : 0;
+      case 'ticker':
+        return b.ticker || '';
+      case 'issuer':
+        return b.shortIssuer || '';
+      case 'type':
+        return b.instrumentGroup || '';
+      case 'clause':
+        return b.structureType || '';
+      case 'callable':
+        return b.isCallable ? 1 : 0;
+      case 'rating': {
+        const ratingScores = {
+          'AAA': 10, 'AA+': 9, 'AA': 8, 'AA-': 7, 'A+': 6, 'A': 5, 'A-': 4,
+          'BBB+': 3, 'BBB': 2, 'S/C': 0
+        };
+        const r = (b.rating || '').replace(/\s+/g, '');
+        for (const [key, score] of Object.entries(ratingScores)) {
+          if (r.includes(key)) return score;
+        }
+        return 0;
+      }
+      case 'law':
+        return b.law || '';
+      case 'maturity':
+        return new Date(b.maturity).getTime() || 0;
+      case 'tir':
+        return b.tir || 0;
+      case 'duration':
+        return b.duration || 0;
+      case 'parity':
+        return b.parity || 0;
+      case 'price':
+        return b.cleanPrice || 0;
+      default:
+        return 0;
+    }
+  }
+
+  handleHeaderClick(colId) {
+    if (this.sortCol === colId) {
+      if (this.sortDir === 'desc') {
+        this.sortDir = 'asc';
+      } else if (this.sortDir === 'asc') {
+        this.sortCol = null;
+        this.sortDir = null;
+      }
+    } else {
+      this.sortCol = colId;
+      this.sortDir = 'desc';
+    }
+    
+    // Rerender headers to update indicators (▲ / ▼)
+    this.renderBondsHeader();
+    this.requestDashboardUpdate();
   }
 
   updateDashboard() {
@@ -668,10 +762,16 @@ class TradingDeskApp {
           if (!col) return '';
           const draggable = colId !== 'fav' ? 'draggable="true"' : '';
           const widthStyle = this.columnWidths[colId] ? `style="width: ${this.columnWidths[colId]}px; min-width: ${this.columnWidths[colId]}px;"` : '';
+          
+          let sortIndicator = '';
+          if (this.sortCol === colId) {
+            sortIndicator = this.sortDir === 'desc' ? ' ▼' : ' ▲';
+          }
+          
           return `
-            <th id="th-${colId}" data-col="${colId}" data-index="${index}" ${draggable} ${widthStyle} class="${colId === 'fav' ? 'fav-th' : ''}">
+            <th id="th-${colId}" data-col="${colId}" data-index="${index}" ${draggable} ${widthStyle} class="${colId === 'fav' ? 'fav-th' : ''} ${this.sortCol === colId ? 'sorted-th' : ''}">
               <div class="th-content">
-                <span class="th-label">${col.label}</span>
+                <span class="th-label" style="pointer-events: none;">${col.label}${sortIndicator}</span>
                 ${colId !== 'fav' ? '<span class="drag-indicator">⋮⋮</span>' : ''}
               </div>
               ${colId !== 'fav' ? '<div class="resize-handle"></div>' : ''}
@@ -703,7 +803,7 @@ class TradingDeskApp {
         handle.classList.add('resizing');
         
         const onMouseMove = (moveEvt) => {
-          const newWidth = Math.max(50, startWidth + (moveEvt.pageX - startX));
+          const newWidth = Math.max(5, startWidth + (moveEvt.pageX - startX));
           th.style.width = `${newWidth}px`;
           th.style.minWidth = `${newWidth}px`;
           this.columnWidths[colId] = newWidth;
@@ -728,6 +828,7 @@ class TradingDeskApp {
       if (th.getAttribute('draggable') !== 'true') return;
 
       th.addEventListener('dragstart', (e) => {
+        this.isDragging = true;
         draggedColId = th.dataset.col;
         th.classList.add('dragging');
         e.dataTransfer.effectAllowed = 'move';
@@ -774,6 +875,22 @@ class TradingDeskApp {
       th.addEventListener('dragend', () => {
         th.classList.remove('dragging');
         headers.forEach(h => h.classList.remove('drag-over'));
+        setTimeout(() => {
+          this.isDragging = false;
+        }, 50);
+      });
+    });
+
+    // 3. Sorting logic on click
+    headers.forEach(th => {
+      th.addEventListener('click', (e) => {
+        // If clicked on resize handle or drag indicator, do not sort
+        if (e.target.classList.contains('resize-handle') || e.target.classList.contains('drag-indicator')) {
+          return;
+        }
+        if (this.isDragging) return;
+        const colId = th.dataset.col;
+        this.handleHeaderClick(colId);
       });
     });
   }
