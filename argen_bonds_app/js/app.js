@@ -98,6 +98,7 @@ class TradingDeskApp {
 
     // Instantiate Yield Curve Chart
     this.yieldCurve = new YieldCurveChart('yieldCurveCanvas');
+    this.selectedRegressionType = localStorage.getItem('argen_bonds_regression_type') || 'quadratic';
 
     this.init();
   }
@@ -358,10 +359,16 @@ class TradingDeskApp {
   }
 
   setupEventListeners() {
-    // Navigation Tabs
-
-
-
+    // Regression Type Selector
+    const regSelect = document.getElementById('regression-type-select');
+    if (regSelect) {
+      regSelect.value = this.selectedRegressionType;
+      regSelect.addEventListener('change', (e) => {
+        this.selectedRegressionType = e.target.value;
+        localStorage.setItem('argen_bonds_regression_type', this.selectedRegressionType);
+        this.requestDashboardUpdate();
+      });
+    }
 
     // Main Control Bar Multi-Grouping Filters
     document.getElementById('search-input')?.addEventListener('input', (e) => {
@@ -623,7 +630,7 @@ class TradingDeskApp {
     if (this.yieldCurve) {
       this.yieldCurve.render(filteredBonds, (bond) => {
         this.openModal(bond);
-      });
+      }, this.selectedRegressionType);
     }
   }
 

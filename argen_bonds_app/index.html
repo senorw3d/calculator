@@ -72,11 +72,20 @@
     <!-- VIEW 0: YIELD CURVE CHART -->
     <section id="view-chart-container" class="view-panel" style="margin-bottom: 1.5rem;">
       <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.75rem;">
           <h3 class="serif-heading" style="font-size: 1.1rem; color: var(--accent-lime); text-transform: uppercase; letter-spacing: 1px; margin: 0;">
             Curva de Rendimiento TIR (TIR % vs Duration)
           </h3>
-          <span style="font-size: 0.75rem; color: var(--text-dim);">Haz clic en un punto para abrir la calculadora de ese bono</span>
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <label for="regression-type-select" style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600;">Regresión:</label>
+            <select id="regression-type-select" class="select-control" style="padding: 0.25rem 1.8rem 0.25rem 0.5rem; font-size: 0.75rem; height: auto; background-position: right 0.5rem center;">
+              <option value="quadratic">Polinómica (2° Grado)</option>
+              <option value="linear">Lineal</option>
+              <option value="logarithmic">Logarítmica</option>
+              <option value="exponential">Exponencial</option>
+            </select>
+            <span style="font-size: 0.75rem; color: var(--text-dim); margin-left: 0.5rem;">Haz clic en un punto para abrir la calculadora</span>
+          </div>
         </div>
         <div style="position: relative; height: 280px; width: 100%;">
           <canvas id="yieldCurveCanvas"></canvas>

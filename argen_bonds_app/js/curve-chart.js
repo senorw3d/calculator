@@ -69,7 +69,63 @@ export class YieldCurveChart {
     return (x) => a * x * x + b * x + c;
   }
 
-  render(bonds, onSelectBond) {
+  fitLinear(points) {
+    if (points.length < 2) return null;
+    let n = points.length;
+    let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0;
+    for (let p of points) {
+      sumX += p.x;
+      sumY += p.y;
+      sumXY += p.x * p.y;
+      sumXX += p.x * p.x;
+    }
+    const denom = n * sumXX - sumX * sumX;
+    if (Math.abs(denom) < 1e-9) return null;
+    let slope = (n * sumXY - sumX * sumY) / denom;
+    let intercept = (sumY - slope * sumX) / n;
+    return (x) => slope * x + intercept;
+  }
+
+  fitLogarithmic(points) {
+    let validPoints = points.filter(p => p.x > 0);
+    if (validPoints.length < 2) return null;
+    let n = validPoints.length;
+    let sumLnX = 0, sumY = 0, sumLnXY = 0, sumLnXLnX = 0;
+    for (let p of validPoints) {
+      let lnX = Math.log(p.x);
+      sumLnX += lnX;
+      sumY += p.y;
+      sumLnXY += lnX * p.y;
+      sumLnXLnX += lnX * lnX;
+    }
+    const denom = n * sumLnXLnX - sumLnX * sumLnX;
+    if (Math.abs(denom) < 1e-9) return null;
+    let a = (n * sumLnXY - sumLnX * sumY) / denom;
+    let b = (sumY - a * sumLnX) / n;
+    return (x) => x > 0 ? a * Math.log(x) + b : 0;
+  }
+
+  fitExponential(points) {
+    let validPoints = points.filter(p => p.y > 0);
+    if (validPoints.length < 2) return null;
+    let n = validPoints.length;
+    let sumX = 0, sumLnY = 0, sumXLnY = 0, sumXX = 0;
+    for (let p of validPoints) {
+      let lnY = Math.log(p.y);
+      sumX += p.x;
+      sumLnY += lnY;
+      sumXLnY += p.x * lnY;
+      sumXX += p.x * p.x;
+    }
+    const denom = n * sumXX - sumX * sumX;
+    if (Math.abs(denom) < 1e-9) return null;
+    let b = (n * sumXLnY - sumX * sumLnY) / denom;
+    let lnA = (sumLnY - b * sumX) / n;
+    let a = Math.exp(lnA);
+    return (x) => a * Math.exp(b * x);
+  }
+
+  render(bonds, onSelectBond, regressionType = 'quadratic') {
     const canvas = document.getElementById(this.canvasId);
     if (!canvas) return;
 
@@ -96,15 +152,36 @@ export class YieldCurveChart {
         bondObj: b
       }));
 
+    if (points.length === 0) {
+      if (this.chart) {
+        this.chart.destroy();
+        this.chart = null;
+      }
+      return;
+    }
+
     const minX = Math.min(...points.map(p => p.x), 0.5);
     const maxX = Math.max(...points.map(p => p.x), 5);
-    const curveFunc = this.fitQuadraticCurve(points);
+    
+    let curveFunc = null;
+    if (regressionType === 'linear') {
+      curveFunc = this.fitLinear(points);
+    } else if (regressionType === 'logarithmic') {
+      curveFunc = this.fitLogarithmic(points);
+    } else if (regressionType === 'exponential') {
+      curveFunc = this.fitExponential(points);
+    } else {
+      curveFunc = this.fitQuadraticCurve(points);
+    }
 
     const fittedLinePoints = [];
     if (curveFunc) {
       const step = (maxX - minX) / 30;
       for (let x = minX; x <= maxX + 0.1; x += step) {
-        fittedLinePoints.push({ x: Number(x.toFixed(2)), y: Number(curveFunc(x).toFixed(2)) });
+        const valY = curveFunc(x);
+        if (!isNaN(valY) && isFinite(valY)) {
+          fittedLinePoints.push({ x: Number(x.toFixed(2)), y: Number(valY.toFixed(2)) });
+        }
       }
     }
 
