@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -84,6 +86,17 @@
               <option value="logarithmic">Logarítmica</option>
               <option value="exponential">Exponencial</option>
             </select>
+            
+            <label for="duration-metric-select" style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600; margin-left: 0.5rem;">Eje X:</label>
+            <select id="duration-metric-select" class="select-control" style="padding: 0.25rem 1.8rem 0.25rem 0.5rem; font-size: 0.75rem; height: auto; background-position: right 0.5rem center;">
+              <option value="modified">Duration Modificada (MD)</option>
+              <option value="macaulay">Duration Común (Macaulay)</option>
+            </select>
+
+            <label style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600; margin-left: 0.5rem; display: flex; align-items: center; gap: 0.25rem; cursor: pointer; user-select: none;">
+              <input type="checkbox" id="show-fitted-curve-chk" checked style="cursor: pointer; width: 14px; height: 14px; accent-color: var(--accent-lime); margin: 0;">
+              Ver Curva
+            </label>
             <span style="font-size: 0.75rem; color: var(--text-dim); margin-left: 0.5rem;">Haz clic en un punto para abrir la calculadora</span>
           </div>
         </div>

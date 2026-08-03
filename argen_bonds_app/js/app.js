@@ -62,6 +62,8 @@ class TradingDeskApp {
     this.selectedGroup = 'USD MEP';
     this.selectedRating = 'Todos';
     this.searchQuery = '';
+    this.selectedDurationMetric = localStorage.getItem('argen_bonds_duration_metric') || 'modified';
+    this.showFittedCurve = localStorage.getItem('argen_bonds_show_fitted_curve') !== 'false';
 
     this.favorites = this.loadFavorites();
     this.activeView = 'view-table';
@@ -371,6 +373,28 @@ class TradingDeskApp {
       regSelect.addEventListener('change', (e) => {
         this.selectedRegressionType = e.target.value;
         localStorage.setItem('argen_bonds_regression_type', this.selectedRegressionType);
+        this.requestDashboardUpdate();
+      });
+    }
+
+    // Duration Metric Selector
+    const durSelect = document.getElementById('duration-metric-select');
+    if (durSelect) {
+      durSelect.value = this.selectedDurationMetric;
+      durSelect.addEventListener('change', (e) => {
+        this.selectedDurationMetric = e.target.value;
+        localStorage.setItem('argen_bonds_duration_metric', this.selectedDurationMetric);
+        this.requestDashboardUpdate();
+      });
+    }
+
+    // Show Fitted Curve Checkbox
+    const curveChk = document.getElementById('show-fitted-curve-chk');
+    if (curveChk) {
+      curveChk.checked = this.showFittedCurve;
+      curveChk.addEventListener('change', (e) => {
+        this.showFittedCurve = e.target.checked;
+        localStorage.setItem('argen_bonds_show_fitted_curve', this.showFittedCurve);
         this.requestDashboardUpdate();
       });
     }
@@ -747,7 +771,7 @@ class TradingDeskApp {
     if (this.yieldCurve) {
       this.yieldCurve.render(filteredBonds, (bond) => {
         this.openModal(bond);
-      }, this.selectedRegressionType);
+      }, this.selectedRegressionType, this.selectedDurationMetric, this.showFittedCurve);
     }
   }
 

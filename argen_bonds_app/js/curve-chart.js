@@ -125,7 +125,7 @@ export class YieldCurveChart {
     return (x) => a * Math.exp(b * x);
   }
 
-  render(bonds, onSelectBond, regressionType = 'quadratic') {
+  render(bonds, onSelectBond, regressionType = 'quadratic', durationMetric = 'modified', showFittedCurve = true) {
     const canvas = document.getElementById(this.canvasId);
     if (!canvas) return;
 
@@ -137,13 +137,19 @@ export class YieldCurveChart {
     const tickTextColor = isLight ? '#0f172a' : '#cbd5e1';
     const gridLineColor = isLight ? 'rgba(15, 23, 42, 0.12)' : 'rgba(255, 238, 0, 0.15)';
     const fittedLineColor = isLight ? '#b45309' : '#ffee00';
-    const pointLabelColor = isLight ? '#071126' : '#ffee00';
+    const pointLabelColor = isLight ? '#475569' : '#94a3b8';
     const pointOutlineColor = isLight ? '#ffffff' : '#071126';
 
+    const isMacaulay = durationMetric === 'macaulay';
+    const xLabel = isMacaulay ? 'Macaulay Duration (Años)' : 'Modified Duration (Años)';
+
     const points = bonds
-      .filter(b => b.duration > 0 && b.tir > 0 && b.tir < 100)
+      .filter(b => {
+        const d = isMacaulay ? b.macaulayDuration : b.duration;
+        return d > 0 && b.tir > 0 && b.tir < 100;
+      })
       .map(b => ({
-        x: b.duration,
+        x: isMacaulay ? b.macaulayDuration : b.duration,
         y: b.tir,
         ticker: b.ticker,
         issuer: b.shortIssuer,
@@ -189,13 +195,23 @@ export class YieldCurveChart {
       this.chart.destroy();
     }
 
+    // Double-click to reset zoom handler
+    if (!canvas.dataset.zoomHandlerAttached) {
+      canvas.addEventListener('dblclick', () => {
+        if (this.chart) {
+          this.chart.resetZoom();
+        }
+      });
+      canvas.dataset.zoomHandlerAttached = 'true';
+    }
+
     // High-Contrast Theme-Aware Canvas Plugin for Ticker Labels
     const pointLabelsPlugin = {
       id: 'pointLabelsPlugin',
       afterDatasetsDraw(chart) {
         const ctx = chart.ctx;
         ctx.save();
-        ctx.font = 'bold 11px "JetBrains Mono", monospace';
+        ctx.font = '8px "JetBrains Mono", monospace';
         ctx.fillStyle = pointLabelColor;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'bottom';
@@ -205,10 +221,14 @@ export class YieldCurveChart {
           meta.data.forEach((element, index) => {
             const dataPoint = chart.data.datasets[0].data[index];
             if (dataPoint && dataPoint.ticker) {
-              ctx.strokeStyle = pointOutlineColor;
-              ctx.lineWidth = 3;
-              ctx.strokeText(dataPoint.ticker, element.x, element.y - 7);
-              ctx.fillText(dataPoint.ticker, element.x, element.y - 7);
+              // Render only if within the chart grid viewport boundaries (prevents overflow during zoom)
+              if (element.x >= chart.chartArea.left && element.x <= chart.chartArea.right &&
+                  element.y >= chart.chartArea.top && element.y <= chart.chartArea.bottom) {
+                ctx.strokeStyle = isLight ? 'rgba(255, 255, 255, 0.8)' : 'rgba(7, 17, 38, 0.8)';
+                ctx.lineWidth = 2.5;
+                ctx.strokeText(dataPoint.ticker, element.x, element.y - 6);
+                ctx.fillText(dataPoint.ticker, element.x, element.y - 6);
+              }
             }
           });
         }
@@ -216,38 +236,43 @@ export class YieldCurveChart {
       }
     };
 
+    const datasets = [
+      {
+        label: 'Obligaciones Negociables & Bonos',
+        data: points,
+        backgroundColor: (ctx) => {
+          const raw = ctx.raw;
+          if (!raw) return fittedLineColor;
+          if (raw.rating && raw.rating.includes('AAA')) return isLight ? '#d97706' : '#ffee00';
+          if (raw.rating && raw.rating.includes('AA')) return isLight ? '#0284c7' : '#38bdf8';
+          return '#ea580c';
+        },
+        borderColor: pointOutlineColor,
+        borderWidth: 1.5,
+        pointRadius: 8,
+        pointHoverRadius: 12
+      }
+    ];
+
+    if (showFittedCurve && fittedLinePoints.length > 0) {
+      datasets.push({
+        label: 'Curva Teórica Ajustada (Fitted Curve)',
+        data: fittedLinePoints,
+        type: 'line',
+        borderColor: fittedLineColor,
+        borderWidth: 3,
+        borderDash: [4, 4],
+        fill: false,
+        pointRadius: 0,
+        tension: 0.4
+      });
+    }
+
     const ctx = canvas.getContext('2d');
     this.chart = new Chart(ctx, {
       type: 'scatter',
       data: {
-        datasets: [
-          {
-            label: 'Obligaciones Negociables & Bonos',
-            data: points,
-            backgroundColor: (ctx) => {
-              const raw = ctx.raw;
-              if (!raw) return fittedLineColor;
-              if (raw.rating && raw.rating.includes('AAA')) return isLight ? '#d97706' : '#ffee00';
-              if (raw.rating && raw.rating.includes('AA')) return isLight ? '#0284c7' : '#38bdf8';
-              return '#ea580c';
-            },
-            borderColor: pointOutlineColor,
-            borderWidth: 1.5,
-            pointRadius: 8,
-            pointHoverRadius: 12
-          },
-          {
-            label: 'Curva Teórica Ajustada (Fitted Curve)',
-            data: fittedLinePoints,
-            type: 'line',
-            borderColor: fittedLineColor,
-            borderWidth: 3,
-            borderDash: [4, 4],
-            fill: false,
-            pointRadius: 0,
-            tension: 0.4
-          }
-        ]
+        datasets: datasets
       },
       plugins: [pointLabelsPlugin],
       options: {
@@ -285,13 +310,31 @@ export class YieldCurveChart {
               label: (item) => {
                 const p = item.raw;
                 if (!p.ticker) return `TIR Estimada: ${p.y}%`;
+                const durName = isMacaulay ? 'Macaulay Duration' : 'Modified Duration';
                 return [
-                  `Duration Modificada: ${p.x} años`,
+                  `${durName}: ${p.x.toFixed(2)} años`,
                   `TIR (YTM): ${p.y.toFixed(2)}%`,
                   `Paridad: ${p.parity.toFixed(1)}%`,
                   `Rating: ${p.rating}`
                 ];
               }
+            }
+          },
+          zoom: {
+            pan: {
+              enabled: true,
+              mode: 'xy',
+              threshold: 5
+            },
+            zoom: {
+              wheel: {
+                enabled: true,
+                speed: 0.08
+              },
+              pinch: {
+                enabled: true
+              },
+              mode: 'xy'
             }
           }
         },
@@ -299,7 +342,7 @@ export class YieldCurveChart {
           x: {
             title: {
               display: true,
-              text: 'Modified Duration (Años)',
+              text: xLabel,
               color: axisTextColor,
               font: { family: 'Inter, sans-serif', weight: 'bold' }
             },
