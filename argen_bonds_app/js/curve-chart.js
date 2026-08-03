@@ -329,7 +329,7 @@ export class YieldCurveChart {
             zoom: {
               wheel: {
                 enabled: true,
-                speed: 0.08
+                speed: 0.015
               },
               pinch: {
                 enabled: true

@@ -64,6 +64,7 @@ class TradingDeskApp {
     this.searchQuery = '';
     this.selectedDurationMetric = localStorage.getItem('argen_bonds_duration_metric') || 'modified';
     this.showFittedCurve = localStorage.getItem('argen_bonds_show_fitted_curve') !== 'false';
+    this.selectedIssuer = 'Todos';
 
     this.favorites = this.loadFavorites();
     this.activeView = 'view-table';
@@ -154,6 +155,7 @@ class TradingDeskApp {
     document.documentElement.setAttribute('data-theme', savedTheme);
     this.recalculateAllBonds();
     this.renderRatingTabs();
+    this.renderIssuerSelect();
     this.setupEventListeners();
     this.updateMarketStatusBadge();
     this.renderRatingEquivalenceTable();
@@ -350,6 +352,51 @@ class TradingDeskApp {
     container.appendChild(fragment);
   }
 
+  renderIssuerSelect() {
+    const select = document.getElementById('issuer-select');
+    if (!select) return;
+
+    // Get unique issuers from calculatedBonds for the current selected tab
+    const currentGroupBonds = this.calculatedBonds.filter(b => {
+      if (this.selectedGroup === 'USD MEP') {
+        return b.currency === 'USD' && (b.law === 'Argentina' || b.law === 'Domestic') && !b.ticker.endsWith('P') && !b.ticker.endsWith('L') && !b.ticker.includes('RZB');
+      } else if (this.selectedGroup === 'USD Cable') {
+        return b.currency === 'USD' && (b.law === 'Extranjera' || b.law === 'Extranjera / Nueva York' || b.law === 'Seleccione Ley Aplicable' || b.law === 'New York');
+      } else if (this.selectedGroup === 'Dólar Linked') {
+        return b.currency === 'USD' && (b.ticker.endsWith('P') || b.ticker.endsWith('L') || b.ticker.includes('RZB') || b.instrumentGroup === 'Dolar Linked');
+      } else if (this.selectedGroup.startsWith('Pesos')) {
+        let group = 'Pesos Fijos';
+        const t = b.ticker.toLowerCase();
+        if (t.endsWith('o') || b.issuer.toLowerCase().includes('rombo') || b.issuer.toLowerCase().includes('toyota') || b.issuer.toLowerCase().includes('bbva') || b.issuer.toLowerCase().includes('santander')) {
+          group = 'Pesos BADLAR';
+        } else if (t.endsWith('v')) {
+          group = 'Pesos TAMAR';
+        }
+        return (b.currency === 'ARS' || b.instrumentGroup.startsWith('Pesos')) && group === this.selectedGroup;
+      } else if (this.selectedGroup === 'Favoritos') {
+        return Array.isArray(this.favorites) && this.favorites.includes(b.id);
+      }
+      return true;
+    });
+
+    const issuers = [...new Set(currentGroupBonds.map(b => b.issuer))].sort();
+    const previousValue = this.selectedIssuer || 'Todos';
+
+    select.innerHTML = `<option value="Todos">Todas las Empresas (${currentGroupBonds.length})</option>` +
+      issuers.map(name => {
+        const count = currentGroupBonds.filter(b => b.issuer === name).length;
+        return `<option value="${name}">${name} (${count})</option>`;
+      }).join('');
+
+    if (issuers.includes(previousValue)) {
+      select.value = previousValue;
+      this.selectedIssuer = previousValue;
+    } else {
+      select.value = 'Todos';
+      this.selectedIssuer = 'Todos';
+    }
+  }
+
   renderRatingEquivalenceTable() {
     const tbody = document.getElementById('rating-equivalence-tbody');
     if (!tbody) return;
@@ -405,6 +452,15 @@ class TradingDeskApp {
       this.requestDashboardUpdate();
     });
 
+    // Issuer Selector
+    const issuerSelect = document.getElementById('issuer-select');
+    if (issuerSelect) {
+      issuerSelect.addEventListener('change', (e) => {
+        this.selectedIssuer = e.target.value;
+        this.requestDashboardUpdate();
+      });
+    }
+
     // Main Navigation Tabs (Grouping & Favorites)
     const navTabs = document.querySelectorAll('#main-tabs .nav-btn');
     navTabs.forEach(btn => {
@@ -412,6 +468,32 @@ class TradingDeskApp {
         navTabs.forEach(t => t.classList.remove('active'));
         e.target.classList.add('active');
         this.selectedGroup = e.target.dataset.group;
+        
+        // Reset all filters when changing tabs
+        this.searchQuery = '';
+        this.selectedRating = 'Todos';
+        this.selectedIssuer = 'Todos';
+        this.sortCol = null;
+        this.sortDir = null;
+
+        // Reset search input DOM
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = '';
+
+        // Reset rating buttons DOM
+        const ratingBtns = document.querySelectorAll('#rating-tabs-container .rating-btn');
+        ratingBtns.forEach(rb => {
+          if (rb.dataset.rating === 'Todos') {
+            rb.classList.add('active');
+          } else {
+            rb.classList.remove('active');
+          }
+        });
+
+        // Re-render issuer select for the new group
+        this.renderIssuerSelect();
+
+        this.renderBondsHeader();
         this.requestDashboardUpdate();
       });
     });
@@ -661,7 +743,7 @@ class TradingDeskApp {
       list = list.filter(b => Array.isArray(this.favorites) && this.favorites.includes(b.id));
     }
 
-    // Now filter by search query and rating
+    // Now filter by search query, rating and issuer
     const filtered = list.filter(b => {
       const matchSearch = !this.searchQuery ||
         b.ticker.toLowerCase().includes(this.searchQuery) ||
@@ -669,8 +751,9 @@ class TradingDeskApp {
         b.issuer.toLowerCase().includes(this.searchQuery);
 
       const matchRating = this.selectedRating === 'Todos' || b.rating === this.selectedRating;
+      const matchIssuer = this.selectedIssuer === 'Todos' || b.issuer === this.selectedIssuer;
 
-      return matchSearch && matchRating;
+      return matchSearch && matchRating && matchIssuer;
     });
 
     return this.sortBonds(filtered);
